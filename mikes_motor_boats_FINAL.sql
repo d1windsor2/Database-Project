@@ -178,7 +178,7 @@ CREATE TABLE IF NOT EXISTS service (
 CREATE TABLE _repair (
     repairID INT PRIMARY KEY AUTO_INCREMENT,
     serviceID INT,
-    repairsCompleted SET ('Yes', 'No'),
+    repairsCompleted VARCHAR(150),
     dateOfRepair DATE,
     FOREIGN KEY (serviceID)
         REFERENCES service (serviceID)
@@ -324,4 +324,41 @@ INSERT INTO Dealer
 		(dealerName, dealerTelephoneNumber, dealerEmail, dealerAddress, dealerPostcode)
 VALUES ('Patricia Topping ', 0765176312, 'ptopping@hotmail.co.uk','1 Zoo Lane, 
 Port Erin','PE1 6SU');
+
+#repair
+INSERT INTO Repair
+		( serviceID, repairsCompleted, dateOfRepair)
+VALUES (1, 'Replace propeller', 2015-02-27);
+
+INSERT INTO Repair
+		( serviceID, repairsCompleted, dateOfRepair)
+VALUES (2, 'New bilge pumps', 2015-08-27);
+
+INSERT INTO Repair
+		( serviceID, repairsCompleted, dateOfRepair)
+VALUES (3, 'New head pumps', 2015-08-15);
+
+INSERT INTO Repair
+		( serviceID, repairsCompleted, dateOfRepair)
+VALUES (5, 'Fit new bearing', 2017-01-27);
+
+INSERT INTO Repair
+		( serviceID, repairsCompleted, dateOfRepair)
+VALUES (6, 'New propellor', 2017-05-13);
+
+INSERT INTO Repair
+		( serviceID, repairsCompleted, dateOfRepair)
+VALUES (7, 'Fit new steeringwheel', 2017-08-21);
+
+INSERT INTO Repair
+		(serviceID, repairsCompleted, dateOfRepair)
+VALUES (8, 'New bodyframe', 2017-11-13);
+
+INSERT INTO Repair
+		(serviceID, repairsCompleted, dateOfRepair)
+VALUES (9, 'Fit new bearing', 2018-03-29);
+
+INSERT INTO Repair
+		(serviceID, repairsCompleted, dateOfRepair)
+VALUES (10, 'Replace propellor', 2018-06-06);
 
