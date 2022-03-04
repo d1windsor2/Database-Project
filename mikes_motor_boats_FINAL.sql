@@ -75,7 +75,7 @@ CREATE TABLE manufacturer (
     CONSTRAINT PRIMARY KEY (manufacturerID)
 );
 
-#part order
+#partorder
 CREATE TABLE part_order (
     orderReferenceNumber INT(32),
     serialNumber INT(255),
@@ -174,11 +174,11 @@ CREATE TABLE IF NOT EXISTS service (
 );
 
 
-#rerpair
+#repair
 CREATE TABLE _repair (
     repairID INT PRIMARY KEY AUTO_INCREMENT,
     serviceID INT,
-    repairsCompleted INT(1) NOT NULL,
+    repairsCompleted SET ('Yes', 'No'),
     dateOfRepair DATE,
     FOREIGN KEY (serviceID)
         REFERENCES service (serviceID)
@@ -188,11 +188,140 @@ CREATE TABLE _repair (
 
 
 #inserts
-INSERT INTO customer
-(customerID, customerFirstName, customerSurname, customerTelephoneNumber, customerEmail, customerAddress, customerPostcode)
-VALUES (001, "Scott", 'Top','07480409673', "dvannoort0@salon.com", "falt 23",'wa14 5ny');
 
-INSERT INTO dealer
+#Customer
+INSERT INTO Customer
+		(customerFirstName, customerSurname, customerTelephoneNumber, customerEmail, customerAddress, customerPostcode)
+VALUES ('Dion', 'Brodnecke', 07174826351, 'dbroes1d@who.int',  '9 Oak Street, Liverpool', 'L34 8DY');
+
+INSERT INTO Customer
+		(customerFirstName, customerSurname, customerTelephoneNumber, customerEmail, customerAddress, customerPostcode)
+VALUES ('Scarlett', 'Galley', 03260476982, 'scargr1c@imgur.com',  '886 Northport Parkway, Liverpool', 'L3 6DF');
+
+INSERT INTO Customer
+		(customerFirstName, customerSurname, customerTelephoneNumber, customerEmail, customerAddress, customerPostcode)
+VALUES ('Sissy', 'Gadson', 04924556740, 'sgadson1b@ucoz.com',  '95 Putney Road, Liverpool', 'L2 7YG');
+
+INSERT INTO Customer
+		(customerFirstName, customerSurname, customerTelephoneNumber, customerEmail, customerAddress, customerPostcode)
+VALUES ('Tabby', 'Minichi', 07795213673, ' minitabc@imgur.com',  '6 Amoth Court, Warrington', 'WT6 8UY');
+
+INSERT INTO Customer
+		(customerFirstName, customerSurname, customerTelephoneNumber, customerEmail, customerAddress, customerPostcode)
+VALUES ('Nellie', 'Greenmon', 03816078215, 'nelliegreen12@patch.com',  '40 Graceland Crossing, Liverpool', 'L23 8FY');
+
+INSERT INTO Customer
+		(customerFirstName, customerSurname, customerTelephoneNumber, customerEmail, customerAddress, customerPostcode)
+VALUES ('Hanny', 'Marsters', 07075576685, 'hmarsters@netlog.com',  '2 Almo Trail, 
+Liverpool', 'L21 9FY');
+
+INSERT INTO Customer
+		(customerFirstName, customerSurname, customerTelephoneNumber, customerEmail, customerAddress, customerPostcode)
+VALUES ('Oswell', 'Aspinell', 09931348133, 'OsAspinell@digg.com',  '64 Jackson Road, Liverpool', 'L5 6FH');
+
+INSERT INTO Customer
+		(customerFirstName, customerSurname, customerTelephoneNumber, customerEmail, customerAddress, customerPostcode)
+VALUES ('Florance', 'Baston', 07315082134, 'FloBar@dirtg.com',  '40 Magdeline Lane, 
+Warrington', 'WT5 8WK');
+
+INSERT INTO Customer
+		(customerFirstName, customerSurname, customerTelephoneNumber, customerEmail, customerAddress, customerPostcode)
+VALUES ('Candice', 'Tumilson', 01639824657, 'canditum15@bloomberg.com',  '1 Farragut Parkway, 
+Liverpool', 'L75 8GJ');
+
+INSERT INTO Customer
+		(customerFirstName, customerSurname, customerTelephoneNumber, customerEmail, customerAddress, customerPostcode)
+VALUES ('Clair', 'Bavin', 06245985897, 'clairBav@sprog.it', '87 Toban Drive, 
+Liverpool', 'L26 8GH');
+
+INSERT INTO Customer
+		(customerFirstName, customerSurname, customerTelephoneNumber, customerEmail, customerAddress, customerPostcode)
+VALUES ('Jade', 'Berry', 07843557123, 'jberry@gmail.com', '64 Zebra Cross, Southport', 'SO1 7BY');
+
+INSERT INTO Customer
+		(customerFirstName, customerSurname, customerTelephoneNumber, customerEmail, customerAddress, customerPostcode)
+VALUES ('Andrew', 'Gifford', 07883764367, 'agifford@gmail.com', '632 Day Lane, Liverpool', 'LS1 6AZ');
+
+INSERT INTO Customer
+		(customerFirstName, customerSurname, customerTelephoneNumber, customerEmail, customerAddress, customerPostcode)
+VALUES ('Josh', 'Dunbar', 07892445664, 'jdunbar@hotmail.com', '12 Arsenal Road, Liverpool', 'LS1 4TH');
+
+INSERT INTO Customer
+		(customerFirstName, customerSurname, customerTelephoneNumber, customerEmail, customerAddress, customerPostcode)
+VALUES ('Owen', 'Duffy', 07789665180, 'oduffy@hotmail.com', '36 Meadow View, Liverpool', 'LS2 6AD');
+
+INSERT INTO Customer
+		(customerFirstName, customerSurname, customerTelephoneNumber, customerEmail, customerAddress, customerPostcode)
+VALUES ('Greg', 'Southall', 07865445321, 'gregsouth@yahoo.com', '654 Sun Road, Liverpool', 'LS3 7DC');
+
+#Dealer
+INSERT INTO Dealer
 (dealerName, dealerTelephoneNumber, dealerEmail, dealerAddress, dealerPostcode)
 VALUES ('Dalis Vannoort', 07574137463, 'dvannoort0@salon.com','77 A828, Appin','AP7 6GU');
+
+INSERT INTO Dealer
+		(dealerName, dealerTelephoneNumber, dealerEmail, dealerAddress, dealerPostcode)
+VALUES ('Joes Junk', 07365534221, 'joesjunk@zdnet.com','15 Back Lane, Buxton','BX7 5FY');
+
+INSERT INTO Dealer
+		(dealerName, dealerTelephoneNumber, dealerEmail, dealerAddress, dealerPostcode)
+VALUES ('Hoebart Kubera', 07874051869, 'hkubera2@who.int','4 Finedon House, Marine 
+Parade, Littlestone','LS4 6GU');
+
+INSERT INTO Dealer
+		(dealerName, dealerTelephoneNumber, dealerEmail, dealerAddress, dealerPostcode)
+VALUES ('Eva Iacomettii ', 07880072148, 'eiacomettii3@admin.ch','9 Hartlands, Onslow Road, 
+Newent','NW5 8TU ');
+
+INSERT INTO Dealer
+		(dealerName, dealerTelephoneNumber, dealerEmail, dealerAddress, dealerPostcode)
+VALUES ('Alley Pate', 07822040557, 'apate4@gnu.org','07610 Arizona Alley','A67 8GU');
+
+INSERT INTO Dealer
+		(dealerName, dealerTelephoneNumber, dealerEmail, dealerAddress, dealerPostcode)
+VALUES ('Korrie Legge', 07380018233, 'klegge5@reference.com','1076 Evesham Road, Astwood 
+Bank','DT5 8JO');
+
+INSERT INTO Dealer
+		(dealerName, dealerTelephoneNumber, dealerEmail, dealerAddress, dealerPostcode)
+VALUES ('Minne Hinkens', 07978390430, 'mhinkens6@smh.com.au','53 Balby Road, Balby','T5 8JO');
+
+INSERT INTO Dealer
+		(dealerName, dealerTelephoneNumber, dealerEmail, dealerAddress, dealerPostcode)
+VALUES ('Inigo MacAllaster', 07893419552, 'imacallaster7@blogspot.com','1910 Farwell Plaza','G56 9FT');
+
+INSERT INTO Dealer
+		(dealerName, dealerTelephoneNumber, dealerEmail, dealerAddress, dealerPostcode)
+VALUES ('Linell Skeeles', 07532931207, 'lskeeles8@goo.gl','57 Great Russell Street, 
+London','NW1 8TU');
+
+INSERT INTO Dealer
+		(dealerName, dealerTelephoneNumber, dealerEmail, dealerAddress, dealerPostcode)
+VALUES ('Sioux Drogan', 07417098738, 'sdrogan9@dropbox.com','75 Thomas Parsons Square, 
+Ely','EL6 9GU ');
+
+INSERT INTO Dealer
+		(dealerName, dealerTelephoneNumber, dealerEmail, dealerAddress, dealerPostcode)
+VALUES ('Jamie Smith', 07624543221, 'jsmith@hotmail.com','13 Window Terrace, 
+Wrexham','WR1 2HM ');
+
+INSERT INTO Dealer
+		(dealerName, dealerTelephoneNumber, dealerEmail, dealerAddress, dealerPostcode)
+VALUES ('Jennifer Saunders', 07951662378, 'jennsaunders@yahoo.com','256 Fallow Road, 
+Douglas','DL2 9MJ');
+
+INSERT INTO Dealer
+		(dealerName, dealerTelephoneNumber, dealerEmail, dealerAddress, dealerPostcode)
+VALUES ('Liam Jones', 07234881223, 'lJones@gmail.co.uk','111 Manor Lane, 
+Ramsey','RS2 6DG');
+
+INSERT INTO Dealer
+		(dealerName, dealerTelephoneNumber, dealerEmail, dealerAddress, dealerPostcode)
+VALUES ('Scott Lewis', 07856715642, 'slewis@aol.com','565 Tree House, 
+Peel','PT6 9MU');
+
+INSERT INTO Dealer
+		(dealerName, dealerTelephoneNumber, dealerEmail, dealerAddress, dealerPostcode)
+VALUES ('Patricia Topping ', 0765176312, 'ptopping@hotmail.co.uk','1 Zoo Lane, 
+Port Erin','PE1 6SU');
 
