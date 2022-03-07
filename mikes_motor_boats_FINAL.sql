@@ -66,7 +66,7 @@ CREATE TABLE part(
 
 #manufactuer
 CREATE TABLE manufacturer (
-    manufacturerID VARCHAR(32),
+    manufacturerID INT NOT NULL,
     manufacturerName VARCHAR(32) NOT NULL,
     manufacturerTelephoneNumber INTEGER(19),
     manufacturerAddress VARCHAR(64),
@@ -98,6 +98,8 @@ CREATE TABLE model (
     boatClassifaction VARCHAR(32),
     boatSize INTEGER,
     CONSTRAINT PRIMARY KEY (boatModel),
+    ,CONSTRAINT boatClassification CHECK (boatClassification IN ("sailboat", "motorboat", "rowing boat"))
+	,CONSTRAINT boatSize CHECK (boatSize IN ("small", "standard", "large", "very large"))
     FOREIGN KEY (ManufacturerID)
         REFERENCES manufacturer (manufacturerID)
 );
@@ -109,7 +111,7 @@ CREATE TABLE boat (
     boatModel VARCHAR(32),
     purchaseDate DATE,
     price DECIMAL(10 , 2 ),
-    manufacturerName VARCHAR(255),
+    manufacturerID INT NOT NULL,
     boatSize VARCHAR(255),
     boatClassification VARCHAR(255),
     saleDate DATE,
@@ -365,4 +367,7 @@ VALUES (10, 'Replace propellor', "2018-06-06");
 
 
 -- #Boat inserts
--- INSERT INTO Boat
+INSERT INTO boat
+    (boatID , boatModel, purchaseDate, price, manufacturerID, boatSize, boatClassification, saleDate, SalePrice)
+VALUES (1, "Explorer", "22-11-10", 3910, 1, "standard", "motorboat", NULL, NULL,)
+
