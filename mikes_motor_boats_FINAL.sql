@@ -28,7 +28,7 @@ CREATE TABLE customer (
     customerPostcode VARCHAR(15) NOT NULL
 );
 
-#enquiery
+#enquiry
 CREATE TABLE IF NOT EXISTS enquiry (
     enquiryID INT NOT NULL AUTO_INCREMENT,
     customerID INT(11) DEFAULT NULL,
