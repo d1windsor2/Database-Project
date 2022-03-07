@@ -463,6 +463,14 @@ INSERT INTO boat
     (boatID , boatModel, purchaseDate, price, manufacturerID, boatSize, boatClassification, saleDate, SalePrice)
 VALUES (23, "MasterSail", "12-10-15", 3240, 2, "large", "sail boat", NULL, NULL,)
 
+# service inserts
+
+INSERT INTO service (serviceID, boatID, dateOfNextStandardService, lastServiceDate, faultDetails, dateOfFault) VALUES
+	(1, 1, '2016-11-24', '2014-09-11', 'Chipped propeller', '2015-02-15'),
+	(2, 1, '2016-11-14', '2015-02-27', 'Bilge pumps gone', '2015-07-10'),
+	(5, 1, '2017-02-12', '2016-03-20', 'Cutless bearing worn through', '2016-12-02');
+
+
 23
 Lrg_SBoat
 MasterSail
