@@ -18,6 +18,8 @@ DROP TABLE IF EXISTS part_order;
 
 SET FOREIGN_KEY_CHECKS = 1;
 
+-- customer
+
 CREATE TABLE customer (
     customerID INT PRIMARY KEY AUTO_INCREMENT,
     customerFirstName VARCHAR(50) NOT NULL,
@@ -28,7 +30,7 @@ CREATE TABLE customer (
     customerPostcode VARCHAR(15) NOT NULL
 );
 
---enquiry
+-- enquiry
 CREATE TABLE IF NOT EXISTS enquiry (
     enquiryID INT NOT NULL AUTO_INCREMENT,
     customerID INT(11) DEFAULT NULL,
@@ -46,6 +48,7 @@ CREATE TABLE IF NOT EXISTS enquiry (
     CONSTRAINT PRIMARY KEY (enquiryID)
 );
 
+-- dealer
 
 CREATE TABLE dealer (
     dealerID INT PRIMARY KEY AUTO_INCREMENT,
@@ -56,7 +59,6 @@ CREATE TABLE dealer (
     dealerPostcode VARCHAR(15) NOT NULL
 );
 
-
 --part
 CREATE TABLE part(
     serialNumber int(32),
@@ -65,6 +67,7 @@ CREATE TABLE part(
 );
 
 --manufactuer
+
 CREATE TABLE manufacturer (
     manufacturerID INT NOT NULL,
     manufacturerName VARCHAR(32) NOT NULL,
@@ -75,7 +78,8 @@ CREATE TABLE manufacturer (
     CONSTRAINT PRIMARY KEY (manufacturerID)
 );
 
---partorder
+--part_order
+
 CREATE TABLE part_order (
     orderReferenceNumber INT(32),
     serialNumber INT(255),
@@ -104,8 +108,8 @@ CREATE TABLE model (
         REFERENCES manufacturer (manufacturerID)
 );
 
-
 --boat
+
 CREATE TABLE boat (
     boatID INT NOT NULL,
     boatModel VARCHAR(32),
@@ -121,8 +125,8 @@ CREATE TABLE boat (
     CONSTRAINT PRIMARY KEY (boatID)
 );
 
-
 --sales_disposals 
+
 CREATE TABLE sales_disposals (
     boatID INT NOT NULL,
     FOREIGN KEY (boatID)
@@ -135,8 +139,8 @@ CREATE TABLE sales_disposals (
     CONSTRAINT PRIMARY KEY (boatID, dealerID)
 );
 
-
 --reservation
+
 CREATE TABLE reservation_rental (
     reservationNumber INT(32),
     customerID INT(32),
@@ -163,6 +167,7 @@ CREATE TABLE reservation_rental (
 );
 
 --service 
+
 CREATE TABLE IF NOT EXISTS service (
     serviceID INT NOT NULL AUTO_INCREMENT,
     boatID INT(11) NOT NULL,
@@ -175,8 +180,8 @@ CREATE TABLE IF NOT EXISTS service (
     CONSTRAINT PRIMARY KEY (serviceID)
 );
 
-
 --repair
+
 CREATE TABLE _repair (
     repairID INT PRIMARY KEY AUTO_INCREMENT,
     serviceID INT,
@@ -185,6 +190,7 @@ CREATE TABLE _repair (
     FOREIGN KEY (serviceID)
         REFERENCES service (serviceID)
 );
+
 
 
 
@@ -366,7 +372,9 @@ INSERT INTO _repair
 VALUES (10, 'Replace propellor', "2018-06-06");
 
 
--- --Boat inserts
+
+-- Boat inserts
+
 INSERT INTO boat
     (boatID , boatModel, purchaseDate, price, manufacturerID, boatSize, boatClassification, saleDate, SalePrice)
 VALUES (1, "Explorer", "22-11-10", 3910, 1, "standard", "motorboat", "02-01-2020", 1500,)
@@ -483,7 +491,10 @@ INSERT INTO boat
     (boatID , boatModel, purchaseDate, price, manufacturerID, boatSize, boatClassification, saleDate, SalePrice)
 VALUES (27, "Grande", "14-02-21", 1569, 5, "standard", "sail boat", NULL, NULL,)
 
---sales dispoasl imserys
+
+
+-- sales disposal inserts
+
 INSERT INTO sales_disposals
     (boatID, dealerID, saleDate, salePrice)
 VALUES (1, 2, "02-01-2020", 1500)
@@ -493,20 +504,28 @@ INSERT INTO sales_disposals
 VALUES (2, 2, "10-10-2019", 1600)
 
 
---service inserts
+-- Service Inserts
 
 INSERT INTO service (serviceID, boatID, dateOfNextStandardService, lastServiceDate, faultDetails, dateOfFault) VALUES
 	(1, 1, '2016-11-24', '2014-09-11', 'Chipped propeller', '2015-02-15');
+	
 INSERT INTO service (serviceID, boatID, dateOfNextStandardService, lastServiceDate, faultDetails, dateOfFault) VALUES
 	(2, 1, '2016-11-14', '2015-02-27', 'Bilge pumps gone', '2015-07-10');
+	
 INSERT INTO service (serviceID, boatID, dateOfNextStandardService, lastServiceDate, faultDetails, dateOfFault) VALUES
 	(5, 1, '2017-02-12', '2016-03-20', 'Cutless bearing wornn through', '2016-12-02');
+	
 INSERT INTO service (serviceID, boatID, dateOfNextStandardService, lastServiceDate, faultDetails, dateOfFault) VALUES
 	(6, 2, '2018-01-04', '2016-10-11', 'Broken propeller', '2017-02-02');
+	
+INSERT INTO service (serviceID, boatID, dateOfNextStandardService, lastServiceDate, faultDetails, dateOfFault) VALUES
 	(7, 2, '2018-02-14', '2017-04-12', 'Faulty steering-wheel', '0000-00-00');
+	
 INSERT INTO service (serviceID, boatID, dateOfNextStandardService, lastServiceDate, faultDetails, dateOfFault) VALUES
 	(8, 3, '2018-04-15', '2017-08-22', 'Chipped bodyframe', '0000-00-00');
+	
 INSERT INTO service (serviceID, boatID, dateOfNextStandardService, lastServiceDate, faultDetails, dateOfFault) VALUES
 	(9, 5, '2018-09-22', '2017-11-09', 'Broken bearing', '0000-00-00');
+	
 INSERT INTO service (serviceID, boatID, dateOfNextStandardService, lastServiceDate, faultDetails, dateOfFault) VALUES
 	(10, 7, '2018-11-28', '2018-02-28', 'Chipped propeller', '0000-00-00');
