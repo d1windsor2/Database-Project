@@ -1,4 +1,4 @@
-# DELETE Existing Tables
+-- DELETE Existing Tables
 
 SET FOREIGN_KEY_CHECKS = 0;
 
@@ -28,7 +28,7 @@ CREATE TABLE customer (
     customerPostcode VARCHAR(15) NOT NULL
 );
 
-#enquiry
+--enquiry
 CREATE TABLE IF NOT EXISTS enquiry (
     enquiryID INT NOT NULL AUTO_INCREMENT,
     customerID INT(11) DEFAULT NULL,
@@ -57,14 +57,14 @@ CREATE TABLE dealer (
 );
 
 
-#part
+--part
 CREATE TABLE part(
     serialNumber int(32),
     partName varchar(32),
     CONSTRAINT PRIMARY KEY (serialNumber)
 );
 
-#manufactuer
+--manufactuer
 CREATE TABLE manufacturer (
     manufacturerID INT NOT NULL,
     manufacturerName VARCHAR(32) NOT NULL,
@@ -75,7 +75,7 @@ CREATE TABLE manufacturer (
     CONSTRAINT PRIMARY KEY (manufacturerID)
 );
 
-#partorder
+--partorder
 CREATE TABLE part_order (
     orderReferenceNumber INT(32),
     serialNumber INT(255),
@@ -91,7 +91,7 @@ CREATE TABLE part_order (
         REFERENCES manufacturer (ManufacturerID)
 );
 
-#model 
+--model 
 CREATE TABLE model (
     boatModel VARCHAR(32),
     manufacturerID VARCHAR(32),
@@ -105,7 +105,7 @@ CREATE TABLE model (
 );
 
 
-#boat
+--boat
 CREATE TABLE boat (
     boatID INT NOT NULL,
     boatModel VARCHAR(32),
@@ -122,7 +122,7 @@ CREATE TABLE boat (
 );
 
 
-#sales_disposals 
+--sales_disposals 
 CREATE TABLE sales_disposals (
     boatID INT NOT NULL,
     FOREIGN KEY (boatID)
@@ -136,7 +136,7 @@ CREATE TABLE sales_disposals (
 );
 
 
-#reservation
+--reservation
 CREATE TABLE reservation_rental (
     reservationNumber INT(32),
     customerID INT(32),
@@ -162,7 +162,7 @@ CREATE TABLE reservation_rental (
         REFERENCES boat (boatID)
 );
 
-#service 
+--service 
 CREATE TABLE IF NOT EXISTS service (
     serviceID INT NOT NULL AUTO_INCREMENT,
     boatID INT(11) NOT NULL,
@@ -176,7 +176,7 @@ CREATE TABLE IF NOT EXISTS service (
 );
 
 
-#repair
+--repair
 CREATE TABLE _repair (
     repairID INT PRIMARY KEY AUTO_INCREMENT,
     serviceID INT,
@@ -189,9 +189,9 @@ CREATE TABLE _repair (
 
 
 
-#inserts
+--inserts
 
-#Customer
+--Customer
 INSERT INTO customer
 		(customerFirstName, customerSurname, customerTelephoneNumber, customerEmail, customerAddress, customerPostcode)
 VALUES ('Dion', 'Brodnecke', 07174826351, 'dbroes1d@who.int',  '9 Oak Street, Liverpool', 'L34 8DY');
@@ -256,7 +256,7 @@ INSERT INTO customer
 		(customerFirstName, customerSurname, customerTelephoneNumber, customerEmail, customerAddress, customerPostcode)
 VALUES ('Greg', 'Southall', 07865445321, 'gregsouth@yahoo.com', '654 Sun Road, Liverpool', 'LS3 7DC');
 
-#Dealer
+--Dealer
 INSERT INTO dealer
 (dealerName, dealerTelephoneNumber, dealerEmail, dealerAddress, dealerPostcode)
 VALUES ('Dalis Vannoort', 07574137463, 'dvannoort0@salon.com','77 A828, Appin','AP7 6GU');
@@ -327,7 +327,7 @@ INSERT INTO dealer
 VALUES ('Patricia Topping ', 0765176312, 'ptopping@hotmail.co.uk','1 Zoo Lane, 
 Port Erin','PE1 6SU');
 
-#repair
+--repair
 INSERT INTO _repair
 		( serviceID, repairsCompleted, dateOfRepair)
 VALUES (1, 'Replace propeller', "2015-02-27");
@@ -366,14 +366,14 @@ INSERT INTO _repair
 VALUES (10, 'Replace propellor', "2018-06-06");
 
 
--- #Boat inserts
+-- --Boat inserts
 INSERT INTO boat
     (boatID , boatModel, purchaseDate, price, manufacturerID, boatSize, boatClassification, saleDate, SalePrice)
-VALUES (1, "Explorer", "22-11-10", 3910, 1, "standard", "motorboat", NULL, NULL,)
+VALUES (1, "Explorer", "22-11-10", 3910, 1, "standard", "motorboat", "02-01-2020", 1500,)
 
 INSERT INTO boat
     (boatID , boatModel, purchaseDate, price, manufacturerID, boatSize, boatClassification, saleDate, SalePrice)
-VALUES (2, "TurboSail", "12-10-09", 3840, 2, "very large", "sail boat", NULL, NULL,)
+VALUES (2, "TurboSail", "12-10-09", 3840, 2, "very large", "sail boat", "10-11-2019", 1600,)
 
 INSERT INTO boat
     (boatID , boatModel, purchaseDate, price, manufacturerID, boatSize, boatClassification, saleDate, SalePrice)
@@ -463,7 +463,17 @@ INSERT INTO boat
     (boatID , boatModel, purchaseDate, price, manufacturerID, boatSize, boatClassification, saleDate, SalePrice)
 VALUES (23, "MasterSail", "12-10-15", 3240, 2, "large", "sail boat", NULL, NULL,)
 
-# service inserts
+--sales dispoasl imserys
+INSERT INTO sales_disposals
+    (boatID, dealerID, saleDate, salePrice)
+VALUES (1, 2, "02-01-2020", 1500)
+
+INSERT INTO sales_disposals
+    (boatID, dealerID, saleDate, salePrice)
+VALUES (2, 2, "10-10-2019", 1600)
+
+
+--service inserts
 
 INSERT INTO service (serviceID, boatID, dateOfNextStandardService, lastServiceDate, faultDetails, dateOfFault) VALUES
 	(1, 1, '2016-11-24', '2014-09-11', 'Chipped propeller', '2015-02-15'),
@@ -475,10 +485,4 @@ INSERT INTO service (serviceID, boatID, dateOfNextStandardService, lastServiceDa
 	(9, 5, '2018-09-22', '2017-11-09', 'Broken bearing', '0000-00-00'),
 	(10, 7, '2018-11-28', '2018-02-28', 'Chipped propeller', '0000-00-00');
 
-23
-Lrg_SBoat
-MasterSail
-2
-12-Oct-15
-3240
-27-Jan-20
+
