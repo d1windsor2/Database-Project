@@ -463,6 +463,25 @@ INSERT INTO boat
     (boatID , boatModel, purchaseDate, price, manufacturerID, boatSize, boatClassification, saleDate, SalePrice)
 VALUES (23, "MasterSail", "12-10-15", 3240, 2, "large", "sail boat", NULL, NULL,)
 
+INSERT INTO boat
+    (boatID , boatModel, purchaseDate, price, manufacturerID, boatSize, boatClassification, saleDate, SalePrice)
+VALUES (24, "MasterSail", "13-10-15", 30240, 2, "very large", "motor boat", NULL, NULL,)
+
+INSERT INTO boat
+    (boatID , boatModel, purchaseDate, price, manufacturerID, boatSize, boatClassification, saleDate, SalePrice)
+VALUES (25, "Grande", "14-02-21", 6440, 5, "small", "motor boat", NULL, NULL,)
+
+INSERT INTO boat
+    (boatID , boatModel, purchaseDate, price, manufacturerID, boatSize, boatClassification, saleDate, SalePrice)
+VALUES (26, "Lizard", "30-11-20", 3040, 6, "standard", "motor boat", NULL, NULL,)
+
+INSERT INTO boat
+    (boatID , boatModel, purchaseDate, price, manufacturerID, boatSize, boatClassification, saleDate, SalePrice)
+VALUES (26, "Lizard", "30-11-20", 3040, 6, "standard", "motor boat", NULL, NULL,)
+
+INSERT INTO boat
+    (boatID , boatModel, purchaseDate, price, manufacturerID, boatSize, boatClassification, saleDate, SalePrice)
+VALUES (27, "Grande", "14-02-21", 1569, 5, "standard", "sail boat", NULL, NULL,)
 --sales dispoasl imserys
 INSERT INTO sales_disposals
     (boatID, dealerID, saleDate, salePrice)
