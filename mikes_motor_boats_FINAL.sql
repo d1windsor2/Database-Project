@@ -96,7 +96,7 @@ CREATE TABLE model (
     boatModel VARCHAR(32),
     manufacturerID VARCHAR(32),
     boatClassifaction VARCHAR(32),
-    boatSize INTEGER,
+    boatSize VARCHAR(32),
     CONSTRAINT PRIMARY KEY (boatModel),
     ,CONSTRAINT boatClassification CHECK (boatClassification IN ("sail boat", "motor boat", "rowing boat"))
 	,CONSTRAINT boatSize CHECK (boatSize IN ("small", "standard", "large", "very large"))
