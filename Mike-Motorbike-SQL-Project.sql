@@ -371,6 +371,159 @@ INSERT INTO _repair
 		(serviceID, repairsCompleted, dateOfRepair)
 VALUES (10, 'Replace propellor', "2018-06-06");
 
+-- --Manufacturer inserts
+
+INSERT INTO manufacturer 
+(manufacturerID, manufacturerName,manufacturerTelephoneNumber, manufacturerAddress, manufacturerPostcode, manufacturerEmail) 
+VALUES (1 ,"SuperBoat", "01772459666", "Unit 7 Centurion Court, Layland", "LE10 2DJ", "admin@superboat.co.uk"); 
+
+INSERT INTO manufacturer 
+(manufacturerID, manufacturerName,manufacturerTelephoneNumber, manufacturerAddress, manufacturerPostcode, manufacturerEmail) 
+VALUES (2 ,"Explorer Boats UK", "01704807654", "Meadow Lane, Burscough", "BU56 8GH", "admin@explorerboats.co.uk"); 
+
+INSERT INTO manufacturer 
+(manufacturerID, manufacturerName,manufacturerTelephoneNumber, manufacturerAddress, manufacturerPostcode, manufacturerEmail) 
+VALUES ( 3,"The Northwich Boat Company", "01270160160", "Unit 1 Kings Lock Boatyard, Booth Lane, Middlewich", "MW67 7GY", "admin@northwichboats.co.uk"); 
+
+INSERT INTO manufacturer 
+(manufacturerID, manufacturerName,manufacturerTelephoneNumber, manufacturerAddress, manufacturerPostcode, manufacturerEmail) 
+VALUES (4 ,"Collingwood Boat Builders", "01513742985", "29 Townsend Street, Collingwood", "CL27 2DU", "admin@collingwoodboats.co.uk"); 
+
+INSERT INTO manufacturer 
+(manufacturerID, manufacturerName,manufacturerTelephoneNumber, manufacturerAddress, manufacturerPostcode, manufacturerEmail) 
+VALUES (5 ,"Elton Moss Boats", "01270760160", "Unit 4 Kings Lock Boatyard, Boothlane, Middlewich", "MW63 8TY", "admin@eltonmossboats.co.uk"); 
+
+INSERT INTO manufacturer 
+(manufacturerID, manufacturerName,manufacturerTelephoneNumber, manufacturerAddress, manufacturerPostcode, manufacturerEmail) 
+VALUES (6 ,"Aintree Boat Company Ltd", "01515239000", "Brookfield Drive, Liverpool", "L1 6GU", "admin@aintreeboats.co.uk");   
+
+INSERT INTO manufacturer 
+(manufacturerID, manufacturerName,manufacturerTelephoneNumber, manufacturerAddress, manufacturerPostcode, manufacturerEmail) 
+VALUES (7 ,"Braidbar Boats Ltd", "01625873471", "Lord Vernons Wharf, Lyme Road, Higher Poynton", "PY12 9TS", "admin@brairbarboats.co.uk"); 
+
+INSERT INTO manufacturer 
+(manufacturerID, manufacturerName,manufacturerTelephoneNumber, manufacturerAddress, manufacturerPostcode, manufacturerEmail) 
+VALUES (8 ,"Bourne Boat Builders Ltd", "0178514692", "Teddesley Road, Penkridge", "PE8 7SU", "admin@bourneboats.co.uk"); 
+
+INSERT INTO manufacturer 
+(manufacturerID, manufacturerName,manufacturerTelephoneNumber, manufacturerAddress, manufacturerPostcode, manufacturerEmail) 
+VALUES (9 ,"Stoke on Trent Boat Builders Ltd", "01782813831", "Longport Wharf Station Street, Stone on Trent", "ST6 9GU", "admin@stokeboats.co.uk"); 
+
+INSERT INTO manufacturer 
+(manufacturerID, manufacturerName,manufacturerTelephoneNumber, manufacturerAddress, manufacturerPostcode, manufacturerEmail) 
+VALUES (10 ,"MGM Boats Narrowboat Builders", "01162640009", "27 Mill Lane, Leicester", "LE6 9FY", "admin@superboat.co.uk"); 
+
+INSERT INTO manufacturer 
+(manufacturerID, manufacturerName,manufacturerTelephoneNumber, manufacturerAddress, manufacturerPostcode, manufacturerEmail) 
+VALUES (11 ,"Aquafleet", "0116264456", "38 Wake Road, Southhampton", "SH9 8FF", "admin@aquafleet.co.uk"); 
+
+INSERT INTO manufacturer 
+(manufacturerID, manufacturerName,manufacturerTelephoneNumber, manufacturerAddress, manufacturerPostcode, manufacturerEmail) 
+VALUES (12 ,"Warner Boats", "0116268746", "64 Zoo Lane, Warwich", "WW6 9GH", "admin@warnerboats.co.uk"); 
+
+INSERT INTO manufacturer 
+(manufacturerID, manufacturerName,manufacturerTelephoneNumber, manufacturerAddress, manufacturerPostcode, manufacturerEmail) 
+VALUES (13 ,"Vikingr Boat Builders", "01162098456", "27 Pillage Lane, Yorkshire", "S76 9FA", "admin@vikingrboat.co.uk"); 	
+	
+INSERT INTO manufacturer 
+(manufacturerID, manufacturerName,manufacturerTelephoneNumber, manufacturerAddress, manufacturerPostcode, manufacturerEmail) 
+VALUES (14 ,"Prideliner Boats", "07162643321", "32 Rainbow Road, Glasgow", "GG6 0RE", "admin@pridelinerboats.co.uk"); 	
+
+INSERT INTO manufacturer 
+(manufacturerID, manufacturerName,manufacturerTelephoneNumber, manufacturerAddress, manufacturerPostcode, manufacturerEmail) 
+VALUES (15 ,"Mountain Boat Makers", "07762640443", "99 Cliff View, Dover", "DV1 3RY", "admin@superboat.co.uk"); 
+
+
+-- --Model inserts
+
+INSERT INTO model 
+(boatModel, ManufacturerID, BoatClassifaction, boatSize) 
+VALUES ("Explorer", 1 , "motor boat", "Standard"); 
+
+INSERT INTO model 
+(boatModel, ManufacturerID, BoatClassifaction, boatSize) 
+VALUES ("TurboSail", 2 , "sail boat", "Very Large"); 
+
+INSERT INTO model 
+(boatModel, ManufacturerID, BoatClassifaction, boatSize)
+VALUES ("MasterSail", 2 , " sail boat", "Large"); 
+
+INSERT INTO model 
+(boatModel, ManufacturerID, BoatClassifaction, boatSize) 
+VALUES ("SmallSailer", 3 , "sail boat", "Small"); 
+  
+INSERT INTO model 
+(boatModel, ManufacturerID, BoatClassifaction, boatSize) 
+VALUES ("Grande", 5 , "motor boat", "Large"); 
+
+INSERT INTO model 
+(boatModel, ManufacturerID, BoatClassifaction, boatSize) 
+VALUES ("Turbo Mid", 5 , "motor boat", "Large"); 
+
+INSERT INTO model 
+(boatModel, ManufacturerID, BoatClassifaction, boatSize) 
+VALUES ("RowStreamer", 3 , " rowing boat", "Large"); 
+
+INSERT INTO model 
+(boatModel, ManufacturerID, BoatClassifaction, boatSize) 
+VALUES ("RowerX", 4 , " rowing boat", "Standard"); 
+
+INSERT INTO model 
+(boatModel, ManufacturerID, BoatClassifaction, boatSize) 
+VALUES ("Navigator", 1 , "motor boat", "Standard"); 
+
+INSERT INTO model 
+(boatModel, ManufacturerID, BoatClassifaction, boatSize) 
+VALUES ("Master Blaser", 7 , "motor boat", "Large"); 
+
+INSERT INTO model 
+(boatModel, ManufacturerID, BoatClassifaction, boatSize) 
+VALUES ("Happy Rower", 8 , "rowing boat", "Large"); 
+
+INSERT INTO model 
+(boatModel, ManufacturerID, BoatClassifaction, boatSize) 
+VALUES ("Explorer", 1 , "motor boat", "Standard"); 
+
+INSERT INTO model 
+(boatModel, ManufacturerID, BoatClassifaction, boatSize) 
+VALUES ("Streamer", 3 , " rowing boat", "Very Large"); 
+
+INSERT INTO model 
+(boatModel, ManufacturerID, BoatClassifaction, boatSize) 
+VALUES ("Great Row", 4 , "rowing boat", "Very large"); 
+
+INSERT INTO model 
+(boatModel, ManufacturerID, BoatClassifaction, boatSize) 
+VALUES ("SuperBlaster", 7 , "rowing Boat", "very large"); 
+
+INSERT INTO model 
+(boatModel, ManufacturerID, BoatClassifaction, boatSize) 
+VALUES ("Lizard", 12 , "motor boat", "large"); 
+
+INSERT INTO model 
+(boatModel, ManufacturerID, BoatClassifaction, boatSize) 
+VALUES ("Lizard", 11 , "motor boat", "large"); 
+
+INSERT INTO model 
+(boatModel, ManufacturerID, BoatClassifaction, boatSize) 
+VALUES ("Skywizard", 13 , "motor boat", "small"); 
+
+INSERT INTO model 
+(boatModel, ManufacturerID, BoatClassifaction, boatSize) 
+VALUES ("Megaliner", 14 , "motor boat", "very large"); 
+
+INSERT INTO model 
+(boatModel, ManufacturerID, BoatClassifaction, boatSize) 
+VALUES ("Wanderer", 15 , "motor boat", "standard"); 
+
+INSERT INTO model 
+(boatModel, ManufacturerID, BoatClassifaction, boatSize) 
+VALUES ("Aquastar", 11 , "rowing boat", "small"); 
+
+INSERT INTO model 
+(boatModel, ManufacturerID, BoatClassifaction, boatSize) 
+VALUES ("Megamind", 12 , “rowing boat", “standard"); 
+
 
 
 -- Boat inserts
