@@ -684,3 +684,80 @@ INSERT INTO _repair
 		(serviceID, repairsCompleted, dateOfRepair)
 VALUES (10, 'Replace propellor', "2018-06-06");
 
+-- part
+
+
+INSERT INTO Part(
+		(serialNumber, partName)
+VALUES (0001, ‘Propeller’)
+
+INSERT INTO Part(
+		(serialNumber, partName)
+VALUES (0002, ‘Cutless Bearings’)
+
+INSERT INTO Part(
+		(serialNumber, partName)
+VALUES (0003, ‘Bilge Pumps’)
+
+INSERT INTO Part(
+		(serialNumber, partName)
+VALUES (0004, ‘Head Pumps’)
+
+INSERT INTO Part(
+		(serialNumber, partName)
+VALUES (0005, ‘Backlights’)
+
+INSERT INTO Part(
+		(serialNumber, partName)
+VALUES (0006, ‘Bearing’)
+
+INSERT INTO Part(
+		(serialNumber, partName)
+VALUES (0007, ‘Sail’)
+
+INSERT INTO Part(
+		(serialNumber, partName)
+VALUES (0008, ‘Oars’)
+
+INSERT INTO Part(
+		(serialNumber, partName)
+VALUES (0009, ‘Motor’)
+
+INSERT INTO Part(
+		(serialNumber, partName)
+VALUES (0010, ‘Mast’)
+
+-- reservation
+	
+INSERT INTO reservation_rental(
+		( reservationNumber, customerId, boatID, boatClassification, boatsize, hirePrice, dateReservedFor, lengthOfRental, paid, customerFirstname, customerSurname, customerTelephone, customerAddress, customerPostcode, boatReturned, price, reservationTime)
+VALUES ( 5344, 1, 9, ‘row boat’, ‘large’, 280, 20/10/2020, 1, True, ‘Dion’, Brodnecke’, 07174826351, ‘dbroes1d@who.int‘, ‘ 9 Oak Street, Liverpool’, ‘L34 8DY’, False, 1400, 12:00) 
+
+INSERT INTO reservation_rental(
+		( reservationNumber, customerId, boatID, boatClassification, boatsize, hirePrice, dateReservedFor, lengthOfRental, paid, customerFirstname, customerSurname, customerTelephone, customerAddress, customerPostcode, boatReturned, price, reservationTime)
+VALUES ( 5345, 2, 17, ‘row boat’, ‘small’, 220, 20/10/2020, 1, True, ‘Scarlett’, ‘Galley’, 03260476982, ‘scargr1c@imgur.com’, ‘886 Northport Parkway, Liverpool’, ‘L3 6DF’, False, 1100, 12:30) 
+
+INSERT INTO reservation_rental(
+		( reservationNumber, customerId, boatID, boatClassification, boatsize, hirePrice, dateReservedFor, lengthOfRental, paid, customerFirstname, customerSurname, customerTelephone, customerAddress, customerPostcode, boatReturned, price, reservationTime)
+VALUES ( 5347, 9, 6, ‘motor boat’, ‘large’, 220, 20/10/2020, 1, True, ‘Candice’, ‘Tumilson’, 01639824657, ‘canditum15@bloomberg.com’, ‘1 Farragut Parkway, Liverpool’, ‘L75 8GJ’, True, 1100, 1:00) 
+
+INSERT INTO reservation_rental(
+		( reservationNumber, customerId, boatID, boatClassification, boatsize, hirePrice, dateReservedFor, lengthOfRental, paid, customerFirstname, customerSurname, customerTelephone, customerAddress, customerPostcode, boatReturned, price, reservationTime)
+VALUES ( 5346, 4, 6, ‘motor boat’, ‘large’, 240, 26/10/2020, 1, True, ‘Tabby’, ‘Minichi’, 07795213673, ‘minitabc@imgur.com’, ‘6 Amoth Court, Warrington’, ‘WT6 8UY’, False, 1200, 11:30) 
+
+INSERT INTO reservation_rental(
+		( reservationNumber, customerId, boatID, boatClassification, boatsize, hirePrice, dateReservedFor, lengthOfRental, paid, customerFirstname, customerSurname, customerTelephone, customerAddress, customerPostcode, boatReturned, price, reservationTime)
+VALUES ( 5349, 7, 16, ‘row boat’, ‘large’, 180, 20/10/2020, 2, False, ‘Oswell’, ‘Aspinell’, 09931348133, ‘osAspinell@digg.com’, ‘64 Jackson Road, Liverpool’, ‘L5 6FH’, False, 800, 10:30) 
+
+INSERT INTO reservation_rental(
+		( reservationNumber, customerId, boatID, boatClassification, boatsize, hirePrice, dateReservedFor, lengthOfRental, paid, customerFirstname, customerSurname, customerTelephone, customerAddress, customerPostcode, boatReturned, price, reservationTime)
+VALUES ( 5348, 6, 15, ‘motor boat’, ‘large’, 240, 20/10/2020, 1, True, ‘Hanny’, ‘Marsters’, 07075576685, ‘hmarsters@netlog.com, ‘2 Almo Trail, Liverpool’, ‘L21 9FY’, False, 1400, 12:45) 
+
+INSERT INTO reservation_rental(
+		( reservationNumber, customerId, boatID, boatClassification, boatsize, hirePrice, dateReservedFor, lengthOfRental, paid, customerFirstname, customerSurname, customerTelephone, customerAddress, customerPostcode, boatReturned, price, reservationTime)
+VALUES ( 5350, 2, 11, ‘sail boat’, ‘large’, 180, 20/10/2020, 1, True, ‘Scarlett’, ‘Galley’, 03260476982, ‘scargr1c@imgur.com’, ‘886 Northport Parkway, Liverpool’, ‘L3 6DF’, False, 800, 12:30) 
+
+INSERT INTO reservation_rental(
+		( reservationNumber, customerId, boatID, boatClassification, boatsize, hirePrice, dateReservedFor, lengthOfRental, paid, customerFirstname, customerSurname, customerTelephone, customerAddress, customerPostcode, boatReturned, price, reservationTime)
+VALUES ( 5352, 5, 17, ‘row boat’, ‘small’, 110, 20/10/2020, 1, False, ‘Nellie’, ‘Greenmon’, 03816078215, ‘nelliegreen12@patch.com, ’40 Graceland Crossing, Liverpool’, ‘L23 8FY’, False, 550, 11:00) 
+
