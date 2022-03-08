@@ -482,6 +482,7 @@ VALUES (26, "Lizard", "30-11-20", 3040, 6, "standard", "motor boat", NULL, NULL,
 INSERT INTO boat
     (boatID , boatModel, purchaseDate, price, manufacturerID, boatSize, boatClassification, saleDate, SalePrice)
 VALUES (27, "Grande", "14-02-21", 1569, 5, "standard", "sail boat", NULL, NULL,)
+
 --sales dispoasl imserys
 INSERT INTO sales_disposals
     (boatID, dealerID, saleDate, salePrice)
@@ -495,13 +496,17 @@ VALUES (2, 2, "10-10-2019", 1600)
 --service inserts
 
 INSERT INTO service (serviceID, boatID, dateOfNextStandardService, lastServiceDate, faultDetails, dateOfFault) VALUES
-	(1, 1, '2016-11-24', '2014-09-11', 'Chipped propeller', '2015-02-15'),
-	(2, 1, '2016-11-14', '2015-02-27', 'Bilge pumps gone', '2015-07-10'),
-	(5, 1, '2017-02-12', '2016-03-20', 'Cutless bearing worn\r\nthrough', '2016-12-02'),
-	(6, 2, '2018-01-04', '2016-10-11', 'Broken propeller', '2017-02-02'),
-	(7, 2, '2018-02-14', '2017-04-12', 'Faulty steering-wheel', '0000-00-00'),
-	(8, 3, '2018-04-15', '2017-08-22', 'Chipped bodyframe', '0000-00-00'),
-	(9, 5, '2018-09-22', '2017-11-09', 'Broken bearing', '0000-00-00'),
+	(1, 1, '2016-11-24', '2014-09-11', 'Chipped propeller', '2015-02-15');
+INSERT INTO service (serviceID, boatID, dateOfNextStandardService, lastServiceDate, faultDetails, dateOfFault) VALUES
+	(2, 1, '2016-11-14', '2015-02-27', 'Bilge pumps gone', '2015-07-10');
+INSERT INTO service (serviceID, boatID, dateOfNextStandardService, lastServiceDate, faultDetails, dateOfFault) VALUES
+	(5, 1, '2017-02-12', '2016-03-20', 'Cutless bearing wornn through', '2016-12-02');
+INSERT INTO service (serviceID, boatID, dateOfNextStandardService, lastServiceDate, faultDetails, dateOfFault) VALUES
+	(6, 2, '2018-01-04', '2016-10-11', 'Broken propeller', '2017-02-02');
+	(7, 2, '2018-02-14', '2017-04-12', 'Faulty steering-wheel', '0000-00-00');
+INSERT INTO service (serviceID, boatID, dateOfNextStandardService, lastServiceDate, faultDetails, dateOfFault) VALUES
+	(8, 3, '2018-04-15', '2017-08-22', 'Chipped bodyframe', '0000-00-00');
+INSERT INTO service (serviceID, boatID, dateOfNextStandardService, lastServiceDate, faultDetails, dateOfFault) VALUES
+	(9, 5, '2018-09-22', '2017-11-09', 'Broken bearing', '0000-00-00');
+INSERT INTO service (serviceID, boatID, dateOfNextStandardService, lastServiceDate, faultDetails, dateOfFault) VALUES
 	(10, 7, '2018-11-28', '2018-02-28', 'Chipped propeller', '0000-00-00');
-
-
