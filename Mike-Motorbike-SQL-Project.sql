@@ -263,6 +263,9 @@ INSERT INTO customer
 		(customerFirstName, customerSurname, customerTelephoneNumber, customerEmail, customerAddress, customerPostcode)
 VALUES ('Greg', 'Southall', 07865445321, 'gregsouth@yahoo.com', '654 Sun Road, Liverpool', 'LS3 7DC');
 
+-- Enquiry
+
+
 -- Dealer
 INSERT INTO dealer
 (dealerName, dealerTelephoneNumber, dealerEmail, dealerAddress, dealerPostcode)
@@ -402,43 +405,43 @@ VALUES (15 ,"Mountain Boat Makers", "07762640443", "99 Cliff View, Dover", "DV1 
 
 INSERT INTO part_order 
 (orderReferenceNumber, serialNumber, manufacturerID, dateofOrder, quantity, orderQuantity, partname) 
-VALUES (001, 0001 , 1, "10-11-22", 2, 1, "Propeller"); 
+VALUES (001, 0001 , 1, "2021-11-10", 2, 1, "Propeller"); 
 
 INSERT INTO part_order 
 (orderReferenceNumber, serialNumber, manufacturerID, dateofOrder, quantity, orderQuantity, partName)
-VALUES (002, 0002 , 3, "11-11-22", 2, 1, "Cutless Bearings"); 
+VALUES (002, 0002 , 3, "2021-11-11", 2, 1, "Cutless Bearings"); 
 
 INSERT INTO part_order 
 (orderReferenceNumber, serialNumber, manufacturerID, dateofOrder, quantity, orderQuantity, partName) 
-VALUES (003, 0003 , 4, "12-11-22", 2, 1, "bilge pumps"); 
+VALUES (003, 0003 , 4, "2021-11-12", 2, 1, "bilge pumps"); 
 
 INSERT INTO part_order 
 (orderReferenceNumber, serialNumber, manufacturerID, dateofOrder, quantity, orderQuantity, partnName) 
-VALUES (004, 0004 , 9, "12-11-22", 2, 1, "Head Pumps"); 
+VALUES (004, 0004 , 9, "2021-11-12", 2, 1, "Head Pumps"); 
  
 INSERT INTO part_order 
 (orderReferenceNumber, serialNumber, manufacturerID, dateofOrder, quantity, orderQuantity, partName) 
-VALUES (005, 0005 , 6, "30-11-22", 2, 1, "Backlights"); 
+VALUES (005, 0005 , 6, "2021-11-30", 2, 1, "Backlights"); 
 
 INSERT INTO part_order 
 (orderReferenceNumber, serialNumber, manufacturerID, dateofOrder, quantity, orderQuantity, partName) 
-VALUES (006,0006 , 6, "1-12-22", 4, 1, "Bearing"); 
+VALUES (006,0006 , 6, "2021-12-01", 4, 1, "Bearing"); 
 
 INSERT INTO part_order 
 (orderReferenceNumber, serialNumber, manufacturerID, dateofOrder, quantity, orderQuantity, partName) 
-VALUES (007, 0007, 6, "2-12-22", 3, 1, "Sail"); 
+VALUES (007, 0007, 6, "2021-12-02", 3, 1, "Sail"); 
 
 INSERT INTO part_order 
 (orderReferenceNumber, serialNumber, manufacturerID, dateofOrder, quantity, orderQuantity, partName) 
-VALUES (008, 0008 , 11, "2-12-22", 2, 1, "Oars"); 
+VALUES (008, 0008 , 11, "2021-12-02", 2, 1, "Oars"); 
 
 INSERT INTO part_order 
 (orderReferenceNumber, serialNumber, manufacturerID, dateofOrder, quantity, orderQuantity, partName) 
-VALUES (009, 0009 , 10, "20-12-22", 2, 1, "Motor"); 
+VALUES (009, 0009 , 10, "2021-12-20", 2, 1, "Motor"); 
 
 INSERT INTO part_order 
 (orderReferenceNumber, serialNumber, manufacturerID, dateofOrder, quantity, orderQuantity, partName) 
-VALUES (010, 0005 , 12, "14-12-22", 8, 1, "Backlights"); 
+VALUES (010, 0005 , 12, "2021-12-14", 8, 1, "Backlights"); 
 
 -- --Model inserts
 
@@ -529,119 +532,119 @@ VALUES ("Megamind", 12 , "rowing boat", "standard");
 
 INSERT INTO boat
     (boatID , boatModel, purchaseDate, price, manufacturerID, boatSize, boatClassification, saleDate, SalePrice)
-VALUES (1, "Explorer", "22-11-10", 3910, 1, "standard", "motorboat", "02-01-20", 1500);
+VALUES (1, "Explorer", "2010-11-22", 3910, 1, "standard", "motorboat", "2020-01-02", 1500);
 
 INSERT INTO boat
     (boatID , boatModel, purchaseDate, price, manufacturerID, boatSize, boatClassification, saleDate, SalePrice)
-VALUES (2, "TurboSail", "12-10-09", 3840, 2, "very large", "sail boat", "10-11-19", 1600);
+VALUES (2, "TurboSail", "2009-10-12", 3840, 2, "very large", "sail boat", "2019-11-10", 1600);
 
 INSERT INTO boat
     (boatID , boatModel, purchaseDate, price, manufacturerID, boatSize, boatClassification, saleDate, SalePrice)
-VALUES (3, "MasterSail", "12-10-15", 3240, 2, "large", "sail boat", NULL, NULL);
+VALUES (3, "MasterSail", "2015-10-12", 3240, 2, "large", "sail boat", NULL, NULL);
 
 INSERT INTO boat
     (boatID , boatModel, purchaseDate, price, manufacturerID, boatSize, boatClassification, saleDate, SalePrice)
-VALUES (4, "SmallSailor", "12-11-15", 2040, 3, "small", "sail boat", NULL, NULL);
+VALUES (4, "SmallSailor", "2015-11-12", 2040, 3, "small", "sail boat", NULL, NULL);
 
 INSERT INTO boat
     (boatID , boatModel, purchaseDate, price, manufacturerID, boatSize, boatClassification, saleDate, SalePrice)
-VALUES (5, "SmallSailor", "12-11-15", 2040, 3, "small", "sail boat", NULL, NULL);
+VALUES (5, "SmallSailor", "2015-11-12", 2040, 3, "small", "sail boat", NULL, NULL);
 
 INSERT INTO boat
     (boatID , boatModel, purchaseDate, price, manufacturerID, boatSize, boatClassification, saleDate, SalePrice)
-VALUES (6, "Grande", "14-01-15", 5440, 5, "large", "motor boat", NULL, NULL);
+VALUES (6, "Grande", "2015-01-14", 5440, 5, "large", "motor boat", NULL, NULL);
 
 INSERT INTO boat
     (boatID , boatModel, purchaseDate, price, manufacturerID, boatSize, boatClassification, saleDate, SalePrice)
-VALUES (7, "Grande", "14-01-15", 5440, 5, "large", "motor boat", NULL, NULL);
+VALUES (7, "Grande", "2015-01-14", 5440, 5, "large", "motor boat", NULL, NULL);
 
 INSERT INTO boat
     (boatID , boatModel, purchaseDate, price, manufacturerID, boatSize, boatClassification, saleDate, SalePrice)
-VALUES (8, "Grande", "14-01-15", 5440, 5, "large", "motor boat", NULL, NULL);
+VALUES (8, "Grande", "2015-01-14", 5440, 5, "large", "motor boat", NULL, NULL);
 
 INSERT INTO boat
     (boatID , boatModel, purchaseDate, price, manufacturerID, boatSize, boatClassification, saleDate, SalePrice)
-VALUES (9, "Turbo Mid", "14-01-15", 5440, 2, "standard", "motor boat", NULL, NULL);
+VALUES (9, "Turbo Mid", "2015-01-14", 5440, 2, "standard", "motor boat", NULL, NULL);
 
 INSERT INTO boat
     (boatID , boatModel, purchaseDate, price, manufacturerID, boatSize, boatClassification, saleDate, SalePrice)
-VALUES (10, "RowStream", "12-01-15", 440, 3, "large", "row boat", NULL, NULL);
+VALUES (10, "RowStream", "2015-01-12", 440, 3, "large", "row boat", NULL, NULL);
 
 INSERT INTO boat
     (boatID , boatModel, purchaseDate, price, manufacturerID, boatSize, boatClassification, saleDate, SalePrice)
-VALUES (11, "RowerX", "12-01-15", 340, 4, "standard", "row boat", NULL, NULL);
+VALUES (11, "RowerX", "2015-01-12", 340, 4, "standard", "row boat", NULL, NULL);
 
 INSERT INTO boat
     (boatID , boatModel, purchaseDate, price, manufacturerID, boatSize, boatClassification, saleDate, SalePrice)
-VALUES (12, "Explorer", "10-01-16", 3320, 1, "large", "sail boat", NULL, NULL);
+VALUES (12, "Explorer", "2016-01-10", 3320, 1, "large", "sail boat", NULL, NULL);
 
 INSERT INTO boat
     (boatID , boatModel, purchaseDate, price, manufacturerID, boatSize, boatClassification, saleDate, SalePrice)
-VALUES (13, "Navigator", "10-01-16", 3320, 1, "standard", "sail boat", NULL, NULL);
+VALUES (13, "Navigator", "2016-01-10", 3320, 1, "standard", "sail boat", NULL, NULL);
 
 INSERT INTO boat
     (boatID , boatModel, purchaseDate, price, manufacturerID, boatSize, boatClassification, saleDate, SalePrice)
-VALUES (14, "Turbo Mid", "14-02-18", 4440, 2, "standard", "motor boat", NULL, NULL);
+VALUES (14, "Turbo Mid", "2018-02-14", 4440, 2, "standard", "motor boat", NULL, NULL);
 
 INSERT INTO boat
     (boatID , boatModel, purchaseDate, price, manufacturerID, boatSize, boatClassification, saleDate, SalePrice)
-VALUES (15, "Turbo Mid", "14-02-18", 4440, 2, "standard", "motor boat", NULL, NULL);
+VALUES (15, "Turbo Mid", "2018-02-14", 4440, 2, "standard", "motor boat", NULL, NULL);
 
 INSERT INTO boat
     (boatID , boatModel, purchaseDate, price, manufacturerID, boatSize, boatClassification, saleDate, SalePrice)
-VALUES (16, "MasterBlaster", "14-01-19", 5440, 7, "large", "motor boat", NULL, NULL);
+VALUES (16, "MasterBlaster", "2019-01-14", 5440, 7, "large", "motor boat", NULL, NULL);
 
 INSERT INTO boat
     (boatID , boatModel, purchaseDate, price, manufacturerID, boatSize, boatClassification, saleDate, SalePrice)
-VALUES (17, "HappyRower", "10-01-18", 340, 8, "large", "row boat", NULL, NULL);
+VALUES (17, "HappyRower", "2018-01-10", 340, 8, "large", "row boat", NULL, NULL);
 
 INSERT INTO boat
     (boatID , boatModel, purchaseDate, price, manufacturerID, boatSize, boatClassification, saleDate, SalePrice)
-VALUES (18, "HappyRower", "10-01-18", 340, 8, "samll", "row boat", NULL, NULL);
+VALUES (18, "HappyRower", "2018-01-10", 340, 8, "samll", "row boat", NULL, NULL);
 
 INSERT INTO boat
     (boatID , boatModel, purchaseDate, price, manufacturerID, boatSize, boatClassification, saleDate, SalePrice)
-VALUES (19, "Steamer", "09-01-17", 640, 3, "very large", "row boat", NULL, NULL);
+VALUES (19, "Steamer", "2017-01-09", 640, 3, "very large", "row boat", NULL, NULL);
 
 INSERT INTO boat
     (boatID , boatModel, purchaseDate, price, manufacturerID, boatSize, boatClassification, saleDate, SalePrice)
-VALUES (20, "GreatRow", "19-01-19", 650, 4, "very large", "row boat", NULL, NULL);
+VALUES (20, "GreatRow", "2019-01-19", 650, 4, "very large", "row boat", NULL, NULL);
 
 INSERT INTO boat
     (boatID , boatModel, purchaseDate, price, manufacturerID, boatSize, boatClassification, saleDate, SalePrice)
-VALUES (21, "SuperBlaster", "14-01-18", 7440, 7, "very large", "motor boat", NULL, NULL);
+VALUES (21, "SuperBlaster", "2018-01-14", 7440, 7, "very large", "motor boat", NULL, NULL);
 
 INSERT INTO boat
     (boatID , boatModel, purchaseDate, price, manufacturerID, boatSize, boatClassification, saleDate, SalePrice)
-VALUES (22, "Lizard", "09-01-17", 340, 6, "standard", "row boat", NULL, NULL);
+VALUES (22, "Lizard", "2017-01-09", 340, 6, "standard", "row boat", NULL, NULL);
 
 INSERT INTO boat
     (boatID , boatModel, purchaseDate, price, manufacturerID, boatSize, boatClassification, saleDate, SalePrice)
-VALUES (23, "Grande", "14-02-18", 5440, 5, "large", "motor boat", NULL, NULL);
+VALUES (23, "Grande", "2018-02-14", 5440, 5, "large", "motor boat", NULL, NULL);
 
 INSERT INTO boat
     (boatID , boatModel, purchaseDate, price, manufacturerID, boatSize, boatClassification, saleDate, SalePrice)
-VALUES (24, "MasterSail", "12-10-15", 3240, 2, "large", "sail boat", NULL, NULL);
+VALUES (24, "MasterSail", "2015-10-12", 3240, 2, "large", "sail boat", NULL, NULL);
 
 INSERT INTO boat
     (boatID , boatModel, purchaseDate, price, manufacturerID, boatSize, boatClassification, saleDate, SalePrice)
-VALUES (25, "MasterSail", "13-10-15", 30240, 2, "very large", "motor boat", NULL, NULL);
+VALUES (25, "MasterSail", "2015-10-13", 30240, 2, "very large", "motor boat", NULL, NULL);
 
 INSERT INTO boat
     (boatID , boatModel, purchaseDate, price, manufacturerID, boatSize, boatClassification, saleDate, SalePrice)
-VALUES (26, "Grande", "14-02-21", 6440, 5, "small", "motor boat", NULL, NULL);
+VALUES (26, "Grande", "2021-02-14", 6440, 5, "small", "motor boat", NULL, NULL);
 
 INSERT INTO boat
     (boatID , boatModel, purchaseDate, price, manufacturerID, boatSize, boatClassification, saleDate, SalePrice)
-VALUES (27, "Lizard", "30-11-20", 3040, 6, "standard", "motor boat", NULL, NULL);
+VALUES (27, "Lizard", "2020-11-30", 3040, 6, "standard", "motor boat", NULL, NULL);
 
 INSERT INTO boat
     (boatID , boatModel, purchaseDate, price, manufacturerID, boatSize, boatClassification, saleDate, SalePrice)
-VALUES (28, "Lizard", "30-11-20", 3040, 6, "standard", "motor boat", NULL, NULL);
+VALUES (28, "Lizard", "2020-11-30", 3040, 6, "standard", "motor boat", NULL, NULL);
 
 INSERT INTO boat
     (boatID , boatModel, purchaseDate, price, manufacturerID, boatSize, boatClassification, saleDate, SalePrice)
-VALUES (29, "Grande", "14-02-21", 1569, 5, "standard", "sail boat", NULL, NULL);
+VALUES (29, "Grande", "2021-02-14", 1569, 5, "standard", "sail boat", NULL, NULL);
 
 
 
@@ -649,11 +652,11 @@ VALUES (29, "Grande", "14-02-21", 1569, 5, "standard", "sail boat", NULL, NULL);
 
 INSERT INTO sales_disposals
     (boatID, dealerID, saleDate, salePrice)
-VALUES (1, 2, "02-01-20", 1500);
+VALUES (1, 2, "2020-01-02", 1500);
 
 INSERT INTO sales_disposals
     (boatID, dealerID, saleDate, salePrice)
-VALUES (2, 2, "10-10-19", 1600);
+VALUES (2, 2, "2019-10-10", 1600);
 
 
 -- Service Inserts
@@ -769,40 +772,52 @@ INSERT INTO part
 		(serialNumber, partName)
 VALUES (0010, "Mast");
 
+INSERT INTO part
+		(serialNumber, partName)
+VALUES (0011, "Forestay");
+
+INSERT INTO part
+		(serialNumber, partName)
+VALUES (0012, "Boom");
+
+INSERT INTO part
+		(serialNumber, partName)
+VALUES (0013, "Rudderstock");
+
 -- reservation
 	
 
 
 INSERT INTO reservation_rental
 		( reservationNumber, customerId, boatID, boatClassification, boatsize, hirePrice, dateReservedFor, lengthOfRental, paid, customerFirstname, customerSurname, customerTelephone, customerEmail, customerAddress, customerPostcode, boatReturned, price, reservationTime)
-VALUES ( 5344, 1, 9, "row boat", "large", 280, "20-10-20", 1, True, "Dion", "Brodnecke", 07174826351, "dbroes1d@who.int", " 9 Oak Street, Liverpool", "L34 8DY", False, 1400, 1200);
+VALUES ( 5344, 1, 9, "row boat", "large", 280, "2020-10-20", 1, True, "Dion", "Brodnecke", 07174826351, "dbroes1d@who.int", " 9 Oak Street, Liverpool", "L34 8DY", False, 1400, 1200);
 
 INSERT INTO reservation_rental
 		( reservationNumber, customerId, boatID, boatClassification, boatsize, hirePrice, dateReservedFor, lengthOfRental, paid, customerFirstname, customerSurname, customerTelephone, customerEmail, customerAddress, customerPostcode, boatReturned, price, reservationTime)
-VALUES ( 5345, 2, 17, "row boat", "small", 220, "20-10-20", 1, True, "Scarlett", "Galley", 03260476982, "scargr1c@imgur.com", "886 Northport Parkway, Liverpool", "L3 6DF", False, 1100, 1230) ;
+VALUES ( 5345, 2, 17, "row boat", "small", 220, "2020-10-20", 1, True, "Scarlett", "Galley", 03260476982, "scargr1c@imgur.com", "886 Northport Parkway, Liverpool", "L3 6DF", False, 1100, 1230) ;
 
 INSERT INTO reservation_rental
 		( reservationNumber, customerId, boatID, boatClassification, boatsize, hirePrice, dateReservedFor, lengthOfRental, paid, customerFirstname, customerSurname, customerTelephone, customerEmail, customerAddress, customerPostcode, boatReturned, price, reservationTime)
-VALUES ( 5347, 9, 6, "motor boat", "large", 220, "20-10-20", 1, True, "Candice", "Tumilson", 01639824657, "canditum15@bloomberg.com", "1 Farragut Parkway, Liverpool", "L75 8GJ", True, 1100, 1300) ;
+VALUES ( 5347, 9, 6, "motor boat", "large", 220, "2020-10-20", 1, True, "Candice", "Tumilson", 01639824657, "canditum15@bloomberg.com", "1 Farragut Parkway, Liverpool", "L75 8GJ", True, 1100, 1300) ;
 
 INSERT INTO reservation_rental
 		( reservationNumber, customerId, boatID, boatClassification, boatsize, hirePrice, dateReservedFor, lengthOfRental, paid, customerFirstname, customerSurname, customerTelephone, customerEmail, customerAddress, customerPostcode, boatReturned, price, reservationTime)
-VALUES ( 5346, 4, 6, "motor boat", "large", 240, "26-10-20", 1, True, "Tabby", "Minichi", 07795213673, "minitabc@imgur.com", "6 Amoth Court, Warrington", "WT6 8UY", False, 1200, 1130) ;
+VALUES ( 5346, 4, 6, "motor boat", "large", 240, "2020-10-26", 1, True, "Tabby", "Minichi", 07795213673, "minitabc@imgur.com", "6 Amoth Court, Warrington", "WT6 8UY", False, 1200, 1130) ;
 
 INSERT INTO reservation_rental
 		( reservationNumber, customerId, boatID, boatClassification, boatsize, hirePrice, dateReservedFor, lengthOfRental, paid, customerFirstname, customerSurname, customerTelephone, customerEmail, customerAddress, customerPostcode, boatReturned, price, reservationTime)
-VALUES ( 5349, 7, 16, "row boat", "large", 180, "20-10-20", 2, False, "Oswell", "Aspinell", 09931348133, "osAspinell@digg.com", "64 Jackson Road, Liverpool", "L5 6FH", False, 800, 1030);
+VALUES ( 5349, 7, 16, "row boat", "large", 180, "2020-10-20", 2, False, "Oswell", "Aspinell", 09931348133, "osAspinell@digg.com", "64 Jackson Road, Liverpool", "L5 6FH", False, 800, 1030);
 
 INSERT INTO reservation_rental
 		( reservationNumber, customerId, boatID, boatClassification, boatsize, hirePrice, dateReservedFor, lengthOfRental, paid, customerFirstname, customerSurname, customerTelephone, customerEmail, customerAddress, customerPostcode, boatReturned, price, reservationTime)
-VALUES ( 5348, 6, 15, "motor boat", "large", 240, "20-10-20", 1, True, "Hanny", "Marsters", 07075576685, "hmarsters@netlog.com", "2 Almo Trail, Liverpool", "L21 9FY", False, 1400, 1245) ;
+VALUES ( 5348, 6, 15, "motor boat", "large", 240, "2020-10-20", 1, True, "Hanny", "Marsters", 07075576685, "hmarsters@netlog.com", "2 Almo Trail, Liverpool", "L21 9FY", False, 1400, 1245) ;
 
 INSERT INTO reservation_rental
 		( reservationNumber, customerId, boatID, boatClassification, boatsize, hirePrice, dateReservedFor, lengthOfRental, paid, customerFirstname, customerSurname, customerTelephone, customerEmail, customerAddress, customerPostcode, boatReturned, price, reservationTime)
-VALUES ( 5350, 2, 11, "sail boat", "large", 180, "20-10-20", 1, True, "Scarlett", "Galley", 03260476982, "scargr1c@imgur.com", "886 Northport Parkway, Liverpool", "L3 6DF", False, 800, 1230) ;
+VALUES ( 5350, 2, 11, "sail boat", "large", 180, "2020-10-20", 1, True, "Scarlett", "Galley", 03260476982, "scargr1c@imgur.com", "886 Northport Parkway, Liverpool", "L3 6DF", False, 800, 1230) ;
 
 INSERT INTO reservation_rental
 		( reservationNumber, customerId, boatID, boatClassification, boatsize, hirePrice, dateReservedFor, lengthOfRental, paid, customerFirstname, customerSurname, customerTelephone, customerEmail, customerAddress, customerPostcode, boatReturned, price, reservationTime)
-VALUES ( 5352, 5, 17, "row boat", "small", 110, "20-10-20", 1, False, "Nellie", "Greenmon", 03816078215, "nelliegreen12@patch.com", "40 Graceland Crossing, Liverpool", "L23 8FY", False, 550, 1100) ;
+VALUES ( 5352, 5, 17, "row boat", "small", 110, "2020-10-20", 1, False, "Nellie", "Greenmon", 03816078215, "nelliegreen12@patch.com", "40 Graceland Crossing, Liverpool", "L23 8FY", False, 550, 1100) ;
 
 
