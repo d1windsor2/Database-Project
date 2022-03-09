@@ -82,7 +82,7 @@ CREATE TABLE manufacturer (
 
 CREATE TABLE part_order (
     orderReferenceNumber INT(32),
-    serialNumber INT(255),
+    serialNumber int(32),
     manufacturerID INT,
     dateOfOrder DATE,
     quantity INTEGER(100),
@@ -401,63 +401,6 @@ INSERT INTO manufacturer
 (manufacturerID, manufacturerName,manufacturerTelephoneNumber, manufacturerAddress, manufacturerPostcode, manufacturerEmail) 
 VALUES (15 ,"Mountain Boat Makers", "07762640443", "99 Cliff View, Dover", "DV1 3RY", "admin@superboat.co.uk"); 
 
--- Part Order inserts
-
-INSERT INTO part_order 
-(orderReferenceNumber, serialNumber, manufacturerID, dateofOrder, quantity, orderQuantity, partname) 
-VALUES (001, 0001 , 1, "2021-11-10", 2, 1, "Propeller"); 
-
-INSERT INTO part_order 
-(orderReferenceNumber, serialNumber, manufacturerID, dateofOrder, quantity, orderQuantity, partName)
-VALUES (002, 0002 , 3, "2021-11-11", 2, 1, "Cutless Bearings"); 
-
-INSERT INTO part_order 
-(orderReferenceNumber, serialNumber, manufacturerID, dateofOrder, quantity, orderQuantity, partName) 
-VALUES (003, 0003 , 4, "2021-11-12", 2, 1, "bilge pumps"); 
-
-INSERT INTO part_order 
-(orderReferenceNumber, serialNumber, manufacturerID, dateofOrder, quantity, orderQuantity, partnName) 
-VALUES (004, 0004 , 9, "2021-11-12", 2, 1, "Head Pumps"); 
- 
-INSERT INTO part_order 
-(orderReferenceNumber, serialNumber, manufacturerID, dateofOrder, quantity, orderQuantity, partName) 
-VALUES (005, 0005 , 6, "2021-11-30", 2, 1, "Backlights"); 
-
-INSERT INTO part_order 
-(orderReferenceNumber, serialNumber, manufacturerID, dateofOrder, quantity, orderQuantity, partName) 
-VALUES (006,0006 , 6, "2021-12-01", 4, 1, "Bearing"); 
-
-INSERT INTO part_order 
-(orderReferenceNumber, serialNumber, manufacturerID, dateofOrder, quantity, orderQuantity, partName) 
-VALUES (007, 0007, 6, "2021-12-02", 3, 1, "Sail"); 
-
-INSERT INTO part_order 
-(orderReferenceNumber, serialNumber, manufacturerID, dateofOrder, quantity, orderQuantity, partName) 
-VALUES (008, 0008, 11, "2021-12-02", 2, 1, "Oars"); 
-
-INSERT INTO part_order 
-(orderReferenceNumber, serialNumber, manufacturerID, dateofOrder, quantity, orderQuantity, partName) 
-VALUES (009, 0009, 10, "2021-12-20", 2, 1, "Motor"); 
-
-INSERT INTO part_order 
-(orderReferenceNumber, serialNumber, manufacturerID, dateofOrder, quantity, orderQuantity, partName) 
-VALUES (010, 0005, 12, "2021-12-14", 8, 1, "Backlights"); 
-
-INSERT INTO part_order 
-(orderReferenceNumber, serialNumber, manufacturerID, dateofOrder, quantity, orderQuantity, partName) 
-VALUES (011, 0010 , 12, "2021-12-14", 6, 1, "Mast");
-
-INSERT INTO part_order 
-(orderReferenceNumber, serialNumber, manufacturerID, dateofOrder, quantity, orderQuantity, partName) 
-VALUES (012, 0011, 12, "2021-12-14", 6, 1, "Forestay"); 
-
-INSERT INTO part_order 
-(orderReferenceNumber, serialNumber, manufacturerID, dateofOrder, quantity, orderQuantity, partName) 
-VALUES (012, 0012, 12, "2021-12-14", 6, 1, "Boom"); 
-
-INSERT INTO part_order 
-(orderReferenceNumber, serialNumber, manufacturerID, dateofOrder, quantity, orderQuantity, partName) 
-VALUES (013, 0013, 12, "2021-12-14", 6, 1, "Rudderstock"); 
 
 
 
@@ -543,10 +486,6 @@ INSERT INTO model
 (boatModel, ManufacturerID, BoatClassifaction, boatSize) 
 VALUES ("Megamind", 12 , "rowing boat", "standard"); 
 
-INSERT INTO model 
-(boatModel, ManufacturerID, BoatClassifaction, boatSize) 
-VALUES ("Explorer", 12 , "sail boat", "large"); 
-
 
 
 -- Boat inserts
@@ -627,7 +566,7 @@ VALUES (18, "HappyRower", "2018-01-10", 340, 8, "samll", "row boat", NULL, NULL)
 
 INSERT INTO boat
     (boatID , boatModel, purchaseDate, price, manufacturerID, boatSize, boatClassification, saleDate, SalePrice)
-VALUES (19, "Steamer", "2017-01-09", 640, 3, "very large", "row boat", NULL, NULL);
+VALUES (19, "Streamer", "2017-01-09", 640, 3, "very large", "row boat", NULL, NULL);
 
 INSERT INTO boat
     (boatID , boatModel, purchaseDate, price, manufacturerID, boatSize, boatClassification, saleDate, SalePrice)
@@ -668,7 +607,6 @@ VALUES (28, "Lizard", "2020-11-30", 3040, 6, "standard", "motor boat", NULL, NUL
 INSERT INTO boat
     (boatID , boatModel, purchaseDate, price, manufacturerID, boatSize, boatClassification, saleDate, SalePrice)
 VALUES (29, "Grande", "2021-02-14", 1569, 5, "standard", "sail boat", NULL, NULL);
-
 
 
 -- sales disposal inserts
@@ -807,9 +745,67 @@ INSERT INTO part
 		(serialNumber, partName)
 VALUES (0013, "Rudderstock");
 
--- reservation
-	
 
+-- Part Order inserts
+
+
+INSERT INTO part_order 
+(orderReferenceNumber, serialNumber, manufacturerID, dateofOrder, quantity, orderQuantity, partname) 
+VALUES (001, 0001 , 1, "2021-11-10", 2, 1, "Propeller"); 
+
+INSERT INTO part_order 
+(orderReferenceNumber, serialNumber, manufacturerID, dateofOrder, quantity, orderQuantity, partName)
+VALUES (002, 0002 , 3, "2021-11-11", 2, 1, "Cutless Bearings"); 
+
+INSERT INTO part_order 
+(orderReferenceNumber, serialNumber, manufacturerID, dateofOrder, quantity, orderQuantity, partName) 
+VALUES (003, 0003 , 4, "2021-11-12", 2, 1, "bilge pumps"); 
+
+INSERT INTO part_order 
+(orderReferenceNumber, serialNumber, manufacturerID, dateofOrder, quantity, orderQuantity, partName) 
+VALUES (004, 0004 , 9, "2021-11-12", 2, 1, "Head Pumps"); 
+ 
+INSERT INTO part_order 
+(orderReferenceNumber, serialNumber, manufacturerID, dateofOrder, quantity, orderQuantity, partName) 
+VALUES (005, 0005 , 6, "2021-11-30", 2, 1, "Backlights"); 
+
+INSERT INTO part_order 
+(orderReferenceNumber, serialNumber, manufacturerID, dateofOrder, quantity, orderQuantity, partName) 
+VALUES (006,0006 , 6, "2021-12-01", 4, 1, "Bearing"); 
+
+INSERT INTO part_order 
+(orderReferenceNumber, serialNumber, manufacturerID, dateofOrder, quantity, orderQuantity, partName) 
+VALUES (007, 0007, 6, "2021-12-02", 3, 1, "Sail"); 
+
+INSERT INTO part_order 
+(orderReferenceNumber, serialNumber, manufacturerID, dateofOrder, quantity, orderQuantity, partName) 
+VALUES (008, 0008, 11, "2021-12-02", 2, 1, "Oars"); 
+
+INSERT INTO part_order 
+(orderReferenceNumber, serialNumber, manufacturerID, dateofOrder, quantity, orderQuantity, partName) 
+VALUES (009, 0009, 10, "2021-12-20", 2, 1, "Motor"); 
+
+INSERT INTO part_order 
+(orderReferenceNumber, serialNumber, manufacturerID, dateofOrder, quantity, orderQuantity, partName) 
+VALUES (010, 0005, 12, "2021-12-14", 8, 1, "Backlights"); 
+
+INSERT INTO part_order 
+(orderReferenceNumber, serialNumber, manufacturerID, dateofOrder, quantity, orderQuantity, partName) 
+VALUES (011, 0010 , 12, "2021-12-14", 6, 1, "Mast");
+
+INSERT INTO part_order 
+(orderReferenceNumber, serialNumber, manufacturerID, dateofOrder, quantity, orderQuantity, partName) 
+VALUES (012, 0011, 12, "2021-12-14", 6, 1, "Forestay"); 
+
+INSERT INTO part_order 
+(orderReferenceNumber, serialNumber, manufacturerID, dateofOrder, quantity, orderQuantity, partName) 
+VALUES (013, 0012, 12, "2021-12-14", 6, 1, "Boom"); 
+
+INSERT INTO part_order 
+(orderReferenceNumber, serialNumber, manufacturerID, dateofOrder, quantity, orderQuantity, partName) 
+VALUES (014, 0013, 12, "2021-12-14", 6, 1, "Rudderstock"); 
+
+-- reservation	
 
 INSERT INTO reservation_rental
 		( reservationNumber, customerId, boatID, boatClassification, boatsize, hirePrice, dateReservedFor, lengthOfRental, paid, customerFirstname, customerSurname, customerTelephone, customerEmail, customerAddress, customerPostcode, boatReturned, price, reservationTime)
@@ -901,11 +897,11 @@ VALUES ( 5365, 3, 22, "row boat", "standard", 120, "2020-10-20", 1, False, 'Siss
 
 INSERT INTO reservation_rental
 		( reservationNumber, customerId, boatID, boatClassification, boatsize, hirePrice, dateReservedFor, lengthOfRental, paid, customerFirstname, customerSurname, customerTelephone, customerEmail, customerAddress, customerPostcode, boatReturned, price, reservationTime)
-VALUES ( 5363, 3, 20, "row boat", "very large", 100, "2020-04-27", 1, True, 'Sissy', 'Gadson', 04924556740, 'sgadson1b@ucoz.com',  '95 Putney Road, Liverpool', False, 650, 1125) ;
+VALUES ( 5363, 3, 20, "row boat", "very large", 100, "2020-04-27", 1, True, 'Sissy', 'Gadson', 04924556740, 'sgadson1b@ucoz.com',  '95 Putney Road, Liverpool',  'L2 7YG', False, 650, 1125) ;
 
 INSERT INTO reservation_rental
 		( reservationNumber, customerId, boatID, boatClassification, boatsize, hirePrice, dateReservedFor, lengthOfRental, paid, customerFirstname, customerSurname, customerTelephone, customerEmail, customerAddress, customerPostcode, boatReturned, price, reservationTime)
-VALUES ( 5342 1, 24, "sail boat", "large", 180, "2020-04-27", 1, False, "Dion", "Brodnecke", 07174826351, "dbroes1d@who.int", " 9 Oak Street, Liverpool", "L34 8DY", False, 3240, 1125) ;
+VALUES ( 5342, 1, 24, "sail boat", "large", 180, "2020-04-27", 1, False, "Dion", "Brodnecke", 07174826351, "dbroes1d@who.int", " 9 Oak Street, Liverpool", "L34 8DY", False, 3240, 1125) ;
 
 INSERT INTO reservation_rental
 		( reservationNumber, customerId, boatID, boatClassification, boatsize, hirePrice, dateReservedFor, lengthOfRental, paid, customerFirstname, customerSurname, customerTelephone, customerEmail, customerAddress, customerPostcode, boatReturned, price, reservationTime)
@@ -934,3 +930,4 @@ VALUES ( 5373, 4, 4, "sail boat", "small", 110, "2021-01-20", 1, True, "Tabby", 
 INSERT INTO reservation_rental
 		( reservationNumber, customerId, boatID, boatClassification, boatsize, hirePrice, dateReservedFor, lengthOfRental, paid, customerFirstname, customerSurname, customerTelephone, customerEmail, customerAddress, customerPostcode, boatReturned, price, reservationTime)
 VALUES ( 5374, 10, 1, "motor boat", "standard", 200, "2021-01-20", 2, True, 'Clair', 'Bavin', 06245985897, 'clairBav@sprog.it', '87 Toban Drive, Liverpool', 'L26 8GH', False, 3910, 1100) ;
+
