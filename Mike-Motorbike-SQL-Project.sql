@@ -402,43 +402,43 @@ VALUES (15 ,"Mountain Boat Makers", "07762640443", "99 Cliff View, Dover", "DV1 
 
 INSERT INTO part_order 
 (orderReferenceNumber, serialNumber, manufacturerID, dateofOrder, quantity, orderQuantity, partname) 
-VALUES (001, 1 , 1, "10-11-22", 2, 1, "Propeller"); 
+VALUES (001, 0001 , 1, "10-11-22", 2, 1, "Propeller"); 
 
 INSERT INTO part_order 
 (orderReferenceNumber, serialNumber, manufacturerID, dateofOrder, quantity, orderQuantity, partName)
-VALUES (002, 2 , 3, "11-11-22", 2, 1, "Cutless Bearings"); 
+VALUES (002, 0002 , 3, "11-11-22", 2, 1, "Cutless Bearings"); 
 
 INSERT INTO part_order 
 (orderReferenceNumber, serialNumber, manufacturerID, dateofOrder, quantity, orderQuantity, partName) 
-VALUES (003, 3 , 4, "12-11-22", 2, 1, "bilge pumps"); 
+VALUES (003, 0003 , 4, "12-11-22", 2, 1, "bilge pumps"); 
 
 INSERT INTO part_order 
 (orderReferenceNumber, serialNumber, manufacturerID, dateofOrder, quantity, orderQuantity, partnName) 
-VALUES (004, 4 , 9, "12-11-22", 2, 1, "Head Pumps"); 
+VALUES (004, 0004 , 9, "12-11-22", 2, 1, "Head Pumps"); 
  
 INSERT INTO part_order 
 (orderReferenceNumber, serialNumber, manufacturerID, dateofOrder, quantity, orderQuantity, partName) 
-VALUES (005, 5 , 6, "30-11-22", 2, 1, "Backlights"); 
+VALUES (005, 0005 , 6, "30-11-22", 2, 1, "Backlights"); 
 
 INSERT INTO part_order 
 (orderReferenceNumber, serialNumber, manufacturerID, dateofOrder, quantity, orderQuantity, partName) 
-VALUES (006,6 , 6, "1-12-22", 4, 1, "Bearing"); 
+VALUES (006,0006 , 6, "1-12-22", 4, 1, "Bearing"); 
 
 INSERT INTO part_order 
 (orderReferenceNumber, serialNumber, manufacturerID, dateofOrder, quantity, orderQuantity, partName) 
-VALUES (007, 7, 6, "2-12-22", 3, 1, "Sail"); 
+VALUES (007, 0007, 6, "2-12-22", 3, 1, "Sail"); 
 
 INSERT INTO part_order 
 (orderReferenceNumber, serialNumber, manufacturerID, dateofOrder, quantity, orderQuantity, partName) 
-VALUES (008, 8 , 11, "2-12-22", 2, 1, "Oars"); 
+VALUES (008, 0008 , 11, "2-12-22", 2, 1, "Oars"); 
 
 INSERT INTO part_order 
 (orderReferenceNumber, serialNumber, manufacturerID, dateofOrder, quantity, orderQuantity, partName) 
-VALUES (009, 9 , 10, "20-12-22", 2, 1, "Motor"); 
+VALUES (009, 0009 , 10, "20-12-22", 2, 1, "Motor"); 
 
 INSERT INTO part_order 
 (orderReferenceNumber, serialNumber, manufacturerID, dateofOrder, quantity, orderQuantity, partName) 
-VALUES (010, 5 , 12, "14-12-22", 8, 1, "Backlights"); 
+VALUES (010, 0005 , 12, "14-12-22", 8, 1, "Backlights"); 
 
 -- --Model inserts
 
