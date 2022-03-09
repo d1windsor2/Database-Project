@@ -931,3 +931,15 @@ INSERT INTO reservation_rental
 		( reservationNumber, customerId, boatID, boatClassification, boatsize, hirePrice, dateReservedFor, lengthOfRental, paid, customerFirstname, customerSurname, customerTelephone, customerEmail, customerAddress, customerPostcode, boatReturned, price, reservationTime)
 VALUES ( 5374, 10, 1, "motor boat", "standard", 200, "2021-01-20", 2, True, 'Clair', 'Bavin', 06245985897, 'clairBav@sprog.it', '87 Toban Drive, Liverpool', 'L26 8GH', False, 3910, 1100) ;
 
+-- Enquiry inserts
+
+INSERT INTO enquiry (enquiryID, customerID, boatClassification, boatSize, hirePrice, dateOfEnquiry, enquiryResponse, customerFirstName, customerSurname, customerTelephoneNumber, customerEmail) VALUES
+	(1, 9, 'row boat', 'large', 110.00, '2020-04-19', 'Yes', 'Candice', 'Tumilson', '1639824657', 'canditum15@bloomberg.com');
+INSERT INTO enquiry (enquiryID, customerID, boatClassification, boatSize, hirePrice, dateOfEnquiry, enquiryResponse, customerFirstName, customerSurname, customerTelephoneNumber, customerEmail) VALUES
+	(2, 12, 'motor boat', 'stand', 400.00, '2020-10-25', 'Yes', 'Andrew', 'Gifford', '7883764367', 'agifford@gmail.com');
+INSERT INTO enquiry (enquiryID, customerID, boatClassification, boatSize, hirePrice, dateOfEnquiry, enquiryResponse, customerFirstName, customerSurname, customerTelephoneNumber, customerEmail) VALUES
+	(3, 10, 'sail boat', 'very ', 240.00, '2020-10-21', 'No', 'Clair', 'Bavin', '6245985897', 'clairBav@sprog.it');
+INSERT INTO enquiry (enquiryID, customerID, boatClassification, boatSize, hirePrice, dateOfEnquiry, enquiryResponse, customerFirstName, customerSurname, customerTelephoneNumber, customerEmail) VALUES
+	(4, 1, 'row boat', 'stand', 120.00, '2019-10-10', 'No', 'Dion', 'Brodnecke', '7174826351', 'dbroes1d@who.int');
+INSERT INTO enquiry (enquiryID, customerID, boatClassification, boatSize, hirePrice, dateOfEnquiry, enquiryResponse, customerFirstName, customerSurname, customerTelephoneNumber, customerEmail) VALUES
+	(5, 13, 'motor boat', 'stand', 200.00, '2021-01-15', 'Yes', 'Josh', 'Dunbar', '7892445664', 'jdunbar@hotmail.com');
