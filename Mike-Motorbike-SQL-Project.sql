@@ -398,6 +398,47 @@ INSERT INTO manufacturer
 (manufacturerID, manufacturerName,manufacturerTelephoneNumber, manufacturerAddress, manufacturerPostcode, manufacturerEmail) 
 VALUES (15 ,"Mountain Boat Makers", "07762640443", "99 Cliff View, Dover", "DV1 3RY", "admin@superboat.co.uk"); 
 
+-- Part Order inserts
+
+INSERT INTO part_order 
+(orderReferenceNumber, serialNumber, manufacturerID, dateofOrder, quantity, orderQuantity, partname) 
+VALUES (001, 1 , 1, 10/11/22, 2, 1, "Propeller"); 
+
+INSERT INTO part_order 
+(orderReferenceNumber, serialNumber, manufacturerID, dateofOrder, quantity, orderQuantity, partName)
+VALUES (002, 2 , 3, 11/11/22, 2, 1, "Cutless Bearings"); 
+
+INSERT INTO part_order 
+(orderReferenceNumber, serialNumber, manufacturerID, dateofOrder, quantity, orderQuantity, partName) 
+VALUES (003, 3 , 4, 12/11/22, 2, 1, "bilge pumps"); 
+
+INSERT INTO part_order 
+(orderReferenceNumber, serialNumber, manufacturerID, dateofOrder, quantity, orderQuantity, partnName) 
+VALUES (004, 4 , 9, 25/11/22, 2, 1, "Head Pumps"); 
+ 
+INSERT INTO part_order 
+(orderReferenceNumber, serialNumber, manufacturerID, dateofOrder, quantity, orderQuantity, partName) 
+VALUES (005, 5 , 6, 30/11/22, 2, 1, "Backlights"); 
+
+INSERT INTO part_order 
+(orderReferenceNumber, serialNumber, manufacturerID, dateofOrder, quantity, orderQuantity, partName) 
+VALUES (006,6 , 6, 1/12/22, 4, 1, "Bearing"); 
+
+INSERT INTO part_order 
+(orderReferenceNumber, serialNumber, manufacturerID, dateofOrder, quantity, orderQuantity, partName) 
+VALUES (007, 7, 6, 2/12/22, 3, 1, "Sail"); 
+
+INSERT INTO part_order 
+(orderReferenceNumber, serialNumber, manufacturerID, dateofOrder, quantity, orderQuantity, partName) 
+VALUES (008, 8 , 11, 2/12/22, 2, 1, "Oars"); 
+
+INSERT INTO part_order 
+(orderReferenceNumber, serialNumber, manufacturerID, dateofOrder, quantity, orderQuantity, partName) 
+VALUES (009, 9 , 10, 30/11/22, 2, 1, "Motor"); 
+
+INSERT INTO part_order 
+(orderReferenceNumber, serialNumber, manufacturerID, dateofOrder, quantity, orderQuantity, partName) 
+VALUES (010, 5 , 12, 14/12/22, 8, 1, "Backlights"); 
 
 -- --Model inserts
 
