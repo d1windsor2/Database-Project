@@ -901,7 +901,11 @@ VALUES ( 5365, 3, 22, "row boat", "standard", 120, "2020-10-20", 1, False, 'Siss
 
 INSERT INTO reservation_rental
 		( reservationNumber, customerId, boatID, boatClassification, boatsize, hirePrice, dateReservedFor, lengthOfRental, paid, customerFirstname, customerSurname, customerTelephone, customerEmail, customerAddress, customerPostcode, boatReturned, price, reservationTime)
-VALUES ( 5365, 1, 20, "row boat", "very large", 100, "2020-04-27", 1, True, "Dion", "Brodnecke", 07174826351, "dbroes1d@who.int", " 9 Oak Street, Liverpool", "L34 8DY", True, 650, 1125) ;
+VALUES ( 5363, 3, 20, "row boat", "very large", 100, "2020-04-27", 1, True, 'Sissy', 'Gadson', 04924556740, 'sgadson1b@ucoz.com',  '95 Putney Road, Liverpool', False, 650, 1125) ;
+
+INSERT INTO reservation_rental
+		( reservationNumber, customerId, boatID, boatClassification, boatsize, hirePrice, dateReservedFor, lengthOfRental, paid, customerFirstname, customerSurname, customerTelephone, customerEmail, customerAddress, customerPostcode, boatReturned, price, reservationTime)
+VALUES ( 5342 1, 24, "sail boat", "large", 180, "2020-04-27", 1, True, "Dion", "Brodnecke", 07174826351, "dbroes1d@who.int", " 9 Oak Street, Liverpool", "L34 8DY", False, 3240, 1125) ;
 
 INSERT INTO reservation_rental
 		( reservationNumber, customerId, boatID, boatClassification, boatsize, hirePrice, dateReservedFor, lengthOfRental, paid, customerFirstname, customerSurname, customerTelephone, customerEmail, customerAddress, customerPostcode, boatReturned, price, reservationTime)
