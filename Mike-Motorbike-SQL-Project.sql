@@ -35,7 +35,7 @@ CREATE TABLE IF NOT EXISTS enquiry (
     enquiryID INT NOT NULL AUTO_INCREMENT,
     customerID INT(11) DEFAULT NULL,
     boatClassification VARCHAR(255) NOT NULL,
-    boatSize VARCHAR(5) DEFAULT NULL,
+    boatSize VARCHAR(25) DEFAULT NULL,
     hirePrice DECIMAL(10 , 2 ) DEFAULT NULL,
     dateOfEnquiry DATE DEFAULT NULL,
     enquiryResponse SET('Yes', 'No') DEFAULT NULL,
