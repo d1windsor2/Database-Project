@@ -813,34 +813,120 @@ VALUES (0013, "Rudderstock");
 
 INSERT INTO reservation_rental
 		( reservationNumber, customerId, boatID, boatClassification, boatsize, hirePrice, dateReservedFor, lengthOfRental, paid, customerFirstname, customerSurname, customerTelephone, customerEmail, customerAddress, customerPostcode, boatReturned, price, reservationTime)
-VALUES ( 5344, 1, 9, "row boat", "large", 280, "2020-10-20", 1, True, "Dion", "Brodnecke", 07174826351, "dbroes1d@who.int", " 9 Oak Street, Liverpool", "L34 8DY", False, 1400, 1200);
+VALUES ( 5344, 1, 9, "row boat", "large", 280, "2020-10-20", 1, True, "Dion", "Brodnecke", 07174826351, "dbroes1d@who.int", " 9 Oak Street, Liverpool", "L34 8DY", False, 5440, 1200);
 
 INSERT INTO reservation_rental
 		( reservationNumber, customerId, boatID, boatClassification, boatsize, hirePrice, dateReservedFor, lengthOfRental, paid, customerFirstname, customerSurname, customerTelephone, customerEmail, customerAddress, customerPostcode, boatReturned, price, reservationTime)
-VALUES ( 5345, 2, 17, "row boat", "small", 220, "2020-10-20", 1, True, "Scarlett", "Galley", 03260476982, "scargr1c@imgur.com", "886 Northport Parkway, Liverpool", "L3 6DF", False, 1100, 1230) ;
+VALUES ( 5345, 2, 17, "row boat", "small", 220, "2020-10-20", 1, True, "Scarlett", "Galley", 03260476982, "scargr1c@imgur.com", "886 Northport Parkway, Liverpool", "L3 6DF", False, 340, 1230) ;
 
 INSERT INTO reservation_rental
 		( reservationNumber, customerId, boatID, boatClassification, boatsize, hirePrice, dateReservedFor, lengthOfRental, paid, customerFirstname, customerSurname, customerTelephone, customerEmail, customerAddress, customerPostcode, boatReturned, price, reservationTime)
-VALUES ( 5347, 9, 6, "motor boat", "large", 220, "2020-10-20", 1, True, "Candice", "Tumilson", 01639824657, "canditum15@bloomberg.com", "1 Farragut Parkway, Liverpool", "L75 8GJ", True, 1100, 1300) ;
+VALUES ( 5347, 9, 6, "motor boat", "large", 220, "2020-10-20", 1, True, "Candice", "Tumilson", 01639824657, "canditum15@bloomberg.com", "1 Farragut Parkway, Liverpool", "L75 8GJ", True, 5440, 1300) ;
 
 INSERT INTO reservation_rental
 		( reservationNumber, customerId, boatID, boatClassification, boatsize, hirePrice, dateReservedFor, lengthOfRental, paid, customerFirstname, customerSurname, customerTelephone, customerEmail, customerAddress, customerPostcode, boatReturned, price, reservationTime)
-VALUES ( 5346, 4, 6, "motor boat", "large", 240, "2020-10-26", 1, True, "Tabby", "Minichi", 07795213673, "minitabc@imgur.com", "6 Amoth Court, Warrington", "WT6 8UY", False, 1200, 1130) ;
+VALUES ( 5346, 4, 6, "motor boat", "large", 240, "2020-10-26", 1, True, "Tabby", "Minichi", 07795213673, "minitabc@imgur.com", "6 Amoth Court, Warrington", "WT6 8UY", False, 5440, 1130) ;
 
 INSERT INTO reservation_rental
 		( reservationNumber, customerId, boatID, boatClassification, boatsize, hirePrice, dateReservedFor, lengthOfRental, paid, customerFirstname, customerSurname, customerTelephone, customerEmail, customerAddress, customerPostcode, boatReturned, price, reservationTime)
-VALUES ( 5349, 7, 16, "row boat", "large", 180, "2020-10-20", 2, False, "Oswell", "Aspinell", 09931348133, "osAspinell@digg.com", "64 Jackson Road, Liverpool", "L5 6FH", False, 800, 1030);
+VALUES ( 5349, 7, 16, "row boat", "large", 180, "2020-10-20", 2, False, "Oswell", "Aspinell", 09931348133, "osAspinell@digg.com", "64 Jackson Road, Liverpool", "L5 6FH", False, 5440, 1030);
 
 INSERT INTO reservation_rental
 		( reservationNumber, customerId, boatID, boatClassification, boatsize, hirePrice, dateReservedFor, lengthOfRental, paid, customerFirstname, customerSurname, customerTelephone, customerEmail, customerAddress, customerPostcode, boatReturned, price, reservationTime)
-VALUES ( 5348, 6, 15, "motor boat", "large", 240, "2020-10-20", 1, True, "Hanny", "Marsters", 07075576685, "hmarsters@netlog.com", "2 Almo Trail, Liverpool", "L21 9FY", False, 1400, 1245) ;
+VALUES ( 5348, 6, 15, "motor boat", "large", 240, "2020-10-20", 1, True, "Hanny", "Marsters", 07075576685, "hmarsters@netlog.com", "2 Almo Trail, Liverpool", "L21 9FY", False, 4440, 1245) ;
 
 INSERT INTO reservation_rental
 		( reservationNumber, customerId, boatID, boatClassification, boatsize, hirePrice, dateReservedFor, lengthOfRental, paid, customerFirstname, customerSurname, customerTelephone, customerEmail, customerAddress, customerPostcode, boatReturned, price, reservationTime)
-VALUES ( 5350, 2, 11, "sail boat", "large", 180, "2020-10-20", 1, True, "Scarlett", "Galley", 03260476982, "scargr1c@imgur.com", "886 Northport Parkway, Liverpool", "L3 6DF", False, 800, 1230) ;
+VALUES ( 5350, 2, 24, "sail boat", "large", 180, "2020-10-20", 1, True, "Scarlett", "Galley", 03260476982, "scargr1c@imgur.com", "886 Northport Parkway, Liverpool", "L3 6DF", False, 3240, 1230) ;
 
 INSERT INTO reservation_rental
 		( reservationNumber, customerId, boatID, boatClassification, boatsize, hirePrice, dateReservedFor, lengthOfRental, paid, customerFirstname, customerSurname, customerTelephone, customerEmail, customerAddress, customerPostcode, boatReturned, price, reservationTime)
-VALUES ( 5352, 5, 17, "row boat", "small", 110, "2020-10-20", 1, False, "Nellie", "Greenmon", 03816078215, "nelliegreen12@patch.com", "40 Graceland Crossing, Liverpool", "L23 8FY", False, 550, 1100) ;
+VALUES ( 5352, 5, 17, "row boat", "large", 110, "2020-10-20", 1, False, "Nellie", "Greenmon", 03816078215, "nelliegreen12@patch.com", "40 Graceland Crossing, Liverpool", "L23 8FY", False, 340, 1100) ;
 
+INSERT INTO reservation_rental
+		( reservationNumber, customerId, boatID, boatClassification, boatsize, hirePrice, dateReservedFor, lengthOfRental, paid, customerFirstname, customerSurname, customerTelephone, customerEmail, customerAddress, customerPostcode, boatReturned, price, reservationTime)
+VALUES ( 5353, 5, 18, "row boat", "small", 110, "2020-10-20", 1, True, "Nellie", "Greenmon", 03816078215, "nelliegreen12@patch.com", "40 Graceland Crossing, Liverpool", "L23 8FY", False, 340, 1100) ;
 
+INSERT INTO reservation_rental
+		( reservationNumber, customerId, boatID, boatClassification, boatsize, hirePrice, dateReservedFor, lengthOfRental, paid, customerFirstname, customerSurname, customerTelephone, customerEmail, customerAddress, customerPostcode, boatReturned, price, reservationTime)
+VALUES ( 5354, 9, 14, "motor boat", "standard", 400, "2020-10-20", 1, True, "Candice", "Tumilson", 01639824657, "canditum15@bloomberg.com", "1 Farragut Parkway, Liverpool", "L75 8GJ", False, 4440, 1115) ;
+
+INSERT INTO reservation_rental
+		( reservationNumber, customerId, boatID, boatClassification, boatsize, hirePrice, dateReservedFor, lengthOfRental, paid, customerFirstname, customerSurname, customerTelephone, customerEmail, customerAddress, customerPostcode, boatReturned, price, reservationTime)
+VALUES ( 5351, 2, 12, "sail boat", "large", 180, "2020-10-20", 1, True, "Scarlett", "Galley", 03260476982, "scargr1c@imgur.com", "886 Northport Parkway, Liverpool", "L3 6DF", False, 3320, 1245) ;
+
+INSERT INTO reservation_rental
+		( reservationNumber, customerId, boatID, boatClassification, boatsize, hirePrice, dateReservedFor, lengthOfRental, paid, customerFirstname, customerSurname, customerTelephone, customerEmail, customerAddress, customerPostcode, boatReturned, price, reservationTime)
+VALUES ( 5364, 8, 4, "sail boat", "small", 110, "2020-10-20", 1, True, 'Florance', 'Baston', 07315082134, 'FloBar@dirtg.com',  '40 Magdeline Lane, Warrington', 'WT5 8WK', False, 2040, 1045) ;
+
+INSERT INTO reservation_rental
+		( reservationNumber, customerId, boatID, boatClassification, boatsize, hirePrice, dateReservedFor, lengthOfRental, paid, customerFirstname, customerSurname, customerTelephone, customerEmail, customerAddress, customerPostcode, boatReturned, price, reservationTime)
+VALUES ( 5355, 9, 28, "motor boat", "standard", 400, "2020-10-20", 1, True, "Candice", "Tumilson", 01639824657, "canditum15@bloomberg.com", "1 Farragut Parkway, Liverpool", "L75 8GJ", False, 3040, 1115) ;
+
+INSERT INTO reservation_rental
+		( reservationNumber, customerId, boatID, boatClassification, boatsize, hirePrice, dateReservedFor, lengthOfRental, paid, customerFirstname, customerSurname, customerTelephone, customerEmail, customerAddress, customerPostcode, boatReturned, price, reservationTime)
+VALUES ( 5356, 1, 28, "motor boat", "standard", 200, "2020-10-25", 2, True, "Dion", "Brodnecke", 07174826351, "dbroes1d@who.int", " 9 Oak Street, Liverpool", "L34 8DY", False, 3040, 1015) ;
+
+INSERT INTO reservation_rental
+		( reservationNumber, customerId, boatID, boatClassification, boatsize, hirePrice, dateReservedFor, lengthOfRental, paid, customerFirstname, customerSurname, customerTelephone, customerEmail, customerAddress, customerPostcode, boatReturned, price, reservationTime)
+VALUES ( 5357, 6, 1, "motor boat", "standard", 200, "2020-10-20", 1, True, "Hanny", "Marsters", 07075576685, "hmarsters@netlog.com", "2 Almo Trail, Liverpool", "L21 9FY", False, 3910, 1215) ;
+
+INSERT INTO reservation_rental
+		( reservationNumber, customerId, boatID, boatClassification, boatsize, hirePrice, dateReservedFor, lengthOfRental, paid, customerFirstname, customerSurname, customerTelephone, customerEmail, customerAddress, customerPostcode, boatReturned, price, reservationTime)
+VALUES ( 5358, 7, 11, "row boat", "standard", 120, "2020-10-20", 1, True, "Oswell", "Aspinell", 09931348133, "osAspinell@digg.com", "64 Jackson Road, Liverpool", "L5 6FH", False, 340, 1145) ;
+
+INSERT INTO reservation_rental
+		( reservationNumber, customerId, boatID, boatClassification, boatsize, hirePrice, dateReservedFor, lengthOfRental, paid, customerFirstname, customerSurname, customerTelephone, customerEmail, customerAddress, customerPostcode, boatReturned, price, reservationTime)
+VALUES ( 5366, 10, 22, "row boat", "standard", 80, "2020-10-25", 2, True, 'Clair', 'Bavin', 06245985897, 'clairBav@sprog.it', '87 Toban Drive, Liverpool', 'L26 8GH', False, 340, 1100) ;
+
+INSERT INTO reservation_rental
+		( reservationNumber, customerId, boatID, boatClassification, boatsize, hirePrice, dateReservedFor, lengthOfRental, paid, customerFirstname, customerSurname, customerTelephone, customerEmail, customerAddress, customerPostcode, boatReturned, price, reservationTime)
+VALUES ( 5360, 4, 24, "sail boat", "large", 240, "2020-10-20", 1, True, "Tabby", "Minichi", 07795213673, "minitabc@imgur.com", "6 Amoth Court, Warrington", "WT6 8UY", False, 3240, 1045) ;
+
+INSERT INTO reservation_rental
+		( reservationNumber, customerId, boatID, boatClassification, boatsize, hirePrice, dateReservedFor, lengthOfRental, paid, customerFirstname, customerSurname, customerTelephone, customerEmail, customerAddress, customerPostcode, boatReturned, price, reservationTime)
+VALUES ( 5361, 8, 2, "sail boat", "very large", 240, "2020-10-20", 1, True, 'Florance', 'Baston', 07315082134, 'FloBar@dirtg.com',  '40 Magdeline Lane, Warrington', 'WT5 8WK', False, 3840, 1120) ;
+
+INSERT INTO reservation_rental
+		( reservationNumber, customerId, boatID, boatClassification, boatsize, hirePrice, dateReservedFor, lengthOfRental, paid, customerFirstname, customerSurname, customerTelephone, customerEmail, customerAddress, customerPostcode, boatReturned, price, reservationTime)
+VALUES ( 5359, 10, 29, "sail boat", "standard", 160, "2020-10-20", 1, False, 'Clair', 'Bavin', 06245985897, 'clairBav@sprog.it', '87 Toban Drive, Liverpool', 'L26 8GH', False, 1569, 1200) ;
+
+INSERT INTO reservation_rental
+		( reservationNumber, customerId, boatID, boatClassification, boatsize, hirePrice, dateReservedFor, lengthOfRental, paid, customerFirstname, customerSurname, customerTelephone, customerEmail, customerAddress, customerPostcode, boatReturned, price, reservationTime)
+VALUES ( 5362, 3, 19, "row boat", "very large", 100, "2020-10-20", 1, False, 'Sissy', 'Gadson', 04924556740, 'sgadson1b@ucoz.com',  '95 Putney Road, Liverpool', 'L2 7YG', False, 640, 1205) ;
+
+INSERT INTO reservation_rental
+		( reservationNumber, customerId, boatID, boatClassification, boatsize, hirePrice, dateReservedFor, lengthOfRental, paid, customerFirstname, customerSurname, customerTelephone, customerEmail, customerAddress, customerPostcode, boatReturned, price, reservationTime)
+VALUES ( 5365, 3, 22, "row boat", "standard", 120, "2020-10-20", 1, False, 'Sissy', 'Gadson', 04924556740, 'sgadson1b@ucoz.com',  '95 Putney Road, Liverpool', 'L2 7YG', False, 340, 1055) ;
+
+INSERT INTO reservation_rental
+		( reservationNumber, customerId, boatID, boatClassification, boatsize, hirePrice, dateReservedFor, lengthOfRental, paid, customerFirstname, customerSurname, customerTelephone, customerEmail, customerAddress, customerPostcode, boatReturned, price, reservationTime)
+VALUES ( 5365, 1, 20, "row boat", "very large", 100, "2020-04-27", 1, True, "Dion", "Brodnecke", 07174826351, "dbroes1d@who.int", " 9 Oak Street, Liverpool", "L34 8DY", True, 650, 1125) ;
+
+INSERT INTO reservation_rental
+		( reservationNumber, customerId, boatID, boatClassification, boatsize, hirePrice, dateReservedFor, lengthOfRental, paid, customerFirstname, customerSurname, customerTelephone, customerEmail, customerAddress, customerPostcode, boatReturned, price, reservationTime)
+VALUES ( 5342, 4, 15, "motor boat", "large", 240, "2019-10-20", 1, False, "Tabby", "Minichi", 07795213673, "minitabc@imgur.com", "6 Amoth Court, Warrington", "WT6 8UY", False, 4440, 1000) ;
+
+INSERT INTO reservation_rental
+		( reservationNumber, customerId, boatID, boatClassification, boatsize, hirePrice, dateReservedFor, lengthOfRental, paid, customerFirstname, customerSurname, customerTelephone, customerEmail, customerAddress, customerPostcode, boatReturned, price, reservationTime)
+VALUES ( 5343, 2, 15, "motor boat", "large", 240, "2019-12-09", 1, True, "Scarlett", "Galley", 03260476982, "scargr1c@imgur.com", "886 Northport Parkway, Liverpool", "L3 6DF", False, 4440, 1000) ;
+
+INSERT INTO reservation_rental
+		( reservationNumber, customerId, boatID, boatClassification, boatsize, hirePrice, dateReservedFor, lengthOfRental, paid, customerFirstname, customerSurname, customerTelephone, customerEmail, customerAddress, customerPostcode, boatReturned, price, reservationTime)
+VALUES ( 5370, 3, 17, "row boat", "large", 110, "2021-01-20", 1, True, 'Sissy', 'Gadson', 04924556740, 'sgadson1b@ucoz.com',  '95 Putney Road, Liverpool', 'L2 7YG', False, 340, 1200) ;
+
+INSERT INTO reservation_rental
+		( reservationNumber, customerId, boatID, boatClassification, boatsize, hirePrice, dateReservedFor, lengthOfRental, paid, customerFirstname, customerSurname, customerTelephone, customerEmail, customerAddress, customerPostcode, boatReturned, price, reservationTime)
+VALUES ( 5371, 1, 24, "sail boat", "large", 180, "2021-01-20", 3, False, "Dion", "Brodnecke", 07174826351, "dbroes1d@who.int", " 9 Oak Street, Liverpool", "L34 8DY", False, 3240, 1200);
+
+INSERT INTO reservation_rental
+		( reservationNumber, customerId, boatID, boatClassification, boatsize, hirePrice, dateReservedFor, lengthOfRental, paid, customerFirstname, customerSurname, customerTelephone, customerEmail, customerAddress, customerPostcode, boatReturned, price, reservationTime)
+VALUES ( 5372, 6, 29, "sail boat", "standard", 160, "2021-01-20", 1, True, "Hanny", "Marsters", 07075576685, "hmarsters@netlog.com", "2 Almo Trail, Liverpool", "L21 9FY", False, 1569, 1215) ;
+
+INSERT INTO reservation_rental
+		( reservationNumber, customerId, boatID, boatClassification, boatsize, hirePrice, dateReservedFor, lengthOfRental, paid, customerFirstname, customerSurname, customerTelephone, customerEmail, customerAddress, customerPostcode, boatReturned, price, reservationTime)
+VALUES ( 5373, 4, 4, "sail boat", "small", 110, "2021-01-20", 1, True, "Tabby", "Minichi", 07795213673, "minitabc@imgur.com", "6 Amoth Court, Warrington", "WT6 8UY", False, 2040, 1045) ;
+
+INSERT INTO reservation_rental
+		( reservationNumber, customerId, boatID, boatClassification, boatsize, hirePrice, dateReservedFor, lengthOfRental, paid, customerFirstname, customerSurname, customerTelephone, customerEmail, customerAddress, customerPostcode, boatReturned, price, reservationTime)
+VALUES ( 5374, 10, 1, "motor boat", "standard", 200, "2021-01-20", 2, True, 'Clair', 'Bavin', 06245985897, 'clairBav@sprog.it', '87 Toban Drive, Liverpool', 'L26 8GH', False, 3910, 1100) ;
