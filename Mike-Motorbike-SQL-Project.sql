@@ -905,11 +905,11 @@ VALUES ( 5363, 3, 20, "row boat", "very large", 100, "2020-04-27", 1, True, 'Sis
 
 INSERT INTO reservation_rental
 		( reservationNumber, customerId, boatID, boatClassification, boatsize, hirePrice, dateReservedFor, lengthOfRental, paid, customerFirstname, customerSurname, customerTelephone, customerEmail, customerAddress, customerPostcode, boatReturned, price, reservationTime)
-VALUES ( 5342 1, 24, "sail boat", "large", 180, "2020-04-27", 1, True, "Dion", "Brodnecke", 07174826351, "dbroes1d@who.int", " 9 Oak Street, Liverpool", "L34 8DY", False, 3240, 1125) ;
+VALUES ( 5342 1, 24, "sail boat", "large", 180, "2020-04-27", 1, False, "Dion", "Brodnecke", 07174826351, "dbroes1d@who.int", " 9 Oak Street, Liverpool", "L34 8DY", False, 3240, 1125) ;
 
 INSERT INTO reservation_rental
 		( reservationNumber, customerId, boatID, boatClassification, boatsize, hirePrice, dateReservedFor, lengthOfRental, paid, customerFirstname, customerSurname, customerTelephone, customerEmail, customerAddress, customerPostcode, boatReturned, price, reservationTime)
-VALUES ( 5342, 4, 15, "motor boat", "large", 240, "2019-10-20", 1, False, "Tabby", "Minichi", 07795213673, "minitabc@imgur.com", "6 Amoth Court, Warrington", "WT6 8UY", False, 4440, 1000) ;
+VALUES ( 5341, 4, 15, "motor boat", "large", 240, "2019-10-20", 1, False, "Tabby", "Minichi", 07795213673, "minitabc@imgur.com", "6 Amoth Court, Warrington", "WT6 8UY", False, 4440, 1000) ;
 
 INSERT INTO reservation_rental
 		( reservationNumber, customerId, boatID, boatClassification, boatsize, hirePrice, dateReservedFor, lengthOfRental, paid, customerFirstname, customerSurname, customerTelephone, customerEmail, customerAddress, customerPostcode, boatReturned, price, reservationTime)
