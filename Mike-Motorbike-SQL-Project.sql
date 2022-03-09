@@ -433,15 +433,33 @@ VALUES (007, 0007, 6, "2021-12-02", 3, 1, "Sail");
 
 INSERT INTO part_order 
 (orderReferenceNumber, serialNumber, manufacturerID, dateofOrder, quantity, orderQuantity, partName) 
-VALUES (008, 0008 , 11, "2021-12-02", 2, 1, "Oars"); 
+VALUES (008, 0008, 11, "2021-12-02", 2, 1, "Oars"); 
 
 INSERT INTO part_order 
 (orderReferenceNumber, serialNumber, manufacturerID, dateofOrder, quantity, orderQuantity, partName) 
-VALUES (009, 0009 , 10, "2021-12-20", 2, 1, "Motor"); 
+VALUES (009, 0009, 10, "2021-12-20", 2, 1, "Motor"); 
 
 INSERT INTO part_order 
 (orderReferenceNumber, serialNumber, manufacturerID, dateofOrder, quantity, orderQuantity, partName) 
-VALUES (010, 0005 , 12, "2021-12-14", 8, 1, "Backlights"); 
+VALUES (010, 0005, 12, "2021-12-14", 8, 1, "Backlights"); 
+
+INSERT INTO part_order 
+(orderReferenceNumber, serialNumber, manufacturerID, dateofOrder, quantity, orderQuantity, partName) 
+VALUES (011, 0010 , 12, "2021-12-14", 6, 1, "Mast");
+
+INSERT INTO part_order 
+(orderReferenceNumber, serialNumber, manufacturerID, dateofOrder, quantity, orderQuantity, partName) 
+VALUES (012, 0011, 12, "2021-12-14", 6, 1, "Forestay"); 
+
+INSERT INTO part_order 
+(orderReferenceNumber, serialNumber, manufacturerID, dateofOrder, quantity, orderQuantity, partName) 
+VALUES (012, 0012, 12, "2021-12-14", 6, 1, "Boom"); 
+
+INSERT INTO part_order 
+(orderReferenceNumber, serialNumber, manufacturerID, dateofOrder, quantity, orderQuantity, partName) 
+VALUES (013, 0013, 12, "2021-12-14", 6, 1, "Rudderstock"); 
+
+
 
 -- --Model inserts
 
@@ -479,7 +497,7 @@ VALUES ("RowerX", 4 , "rowing boat", "standard");
 
 INSERT INTO model 
 (boatModel, ManufacturerID, BoatClassifaction, boatSize) 
-VALUES ("Navigator", 1 , "motor boat", "standard"); 
+VALUES ("Navigator", 1 , "sail boat", "standard"); 
 
 INSERT INTO model 
 (boatModel, ManufacturerID, BoatClassifaction, boatSize) 
@@ -491,7 +509,7 @@ VALUES ("HappyRower", 8 , "rowing boat", "large");
 
 INSERT INTO model 
 (boatModel, ManufacturerID, BoatClassifaction, boatSize) 
-VALUES ("Steamer", 3 , "rowing boat", "very Large"); 
+VALUES ("Streamer", 3 , "rowing boat", "very Large"); 
 
 INSERT INTO model 
 (boatModel, ManufacturerID, BoatClassifaction, boatSize) 
@@ -524,6 +542,11 @@ VALUES ("Aquastar", 11 , "rowing boat", "small");
 INSERT INTO model 
 (boatModel, ManufacturerID, BoatClassifaction, boatSize) 
 VALUES ("Megamind", 12 , "rowing boat", "standard"); 
+
+INSERT INTO model 
+(boatModel, ManufacturerID, BoatClassifaction, boatSize) 
+VALUES ("Explorer", 12 , "sail boat", "large"); 
+
 
 
 -- Boat inserts
